@@ -29,26 +29,26 @@
 
 @include media ($tablet){}
 
-@include media ($desktop){
+@include media ($large-desktop){
 	.hero{
 		height: 200px;
 		padding: 0px;
+		margin-bottom: 100px;
 	}
 
 	.hero__container{
-		@include span-columns(8);
-		@include shift(2);
+		@include span-columns(9 of 12);
 	}
 
 	.hero__title{
-		font-size: em(30);
+		font-size: em(35);
 		line-height: 10px;
 	}
 
 	.hero__summary{
 		font-weight: $thin;
-		font-size: em(28);
-		line-height: 40px;
+		font-size: em(35);
+		line-height: 50px;
 	}
 }
 

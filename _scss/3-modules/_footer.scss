@@ -25,6 +25,22 @@ footer{
 
 	li{
 		display: inline-block;
+   		margin-left: 10px;
+
+   		a{
+   			color: black;
+   			font-size: 23px;
+   		}
+	}
+}
+
+.footer__copyright{
+	font-size: em(18);
+	font-weight: 500;
+	color: #0A1128;
+
+	a{
+		color: grey;
 	}
 }
 
@@ -55,6 +71,7 @@ footer{
 	.footer__social{
 		@include span-columns(6);
 		text-align: right;
+
 	}
 
 
