@@ -1,5 +1,4 @@
 footer{
-	background: #F6F7F7;
 	height: 200px;
     text-align: center;
     color: #909292;
@@ -12,7 +11,6 @@ footer{
     height: 200px;
     width: 80%;
 	margin: 0 auto;
-	
 }
 
 .footer__content{
@@ -46,36 +44,54 @@ footer{
 
 @include media ($tablet){
 
-footer{
+	.footer__container{
+		@include span-columns(10);
+		@include shift(1);
+    	
+	}
 
-}
-
-.footer__container{
-	@include outer-container();
-	display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    height: 200px;
-}
-
-
-	.footer__content{
-		@include span-columns(12);
+	.footer__version{
+		@include span-columns(3 of 10);
+		text-align: left;
+		
 	}
 
 	.footer__copyright{
-		@include span-columns(6);
-		text-align: left;
+		@include span-columns(4 of 10);
+		text-align: center;
+		
 	}
 
 	.footer__social{
-		@include span-columns(6);
+		@include span-columns(3 of 10);
 		text-align: right;
-
+		
 	}
-
-
 }
 
-@include media ($desktop){
+@include media ($large-desktop){
+
+	.footer__container{
+		@include span-columns(12);
+		@include shift(0);
+    	
+	}
+
+	.footer__version{
+		@include span-columns(3 of 12);
+		text-align: left;
+		
+	}
+
+	.footer__copyright{
+		@include span-columns(6 of 12);
+		text-align: center;
+		
+	}
+
+	.footer__social{
+		@include span-columns(3 of 12);
+		text-align: right;
+		
+	}
 }

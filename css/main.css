@@ -5,6 +5,33 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body:before {
+  background-image: linear-gradient(to left, transparent 0, #d5eefb 0, #d5eefb 7.56914%, transparent 7.56914%, transparent 18.48617%, #d5eefb 18.48617%, #d5eefb 26.05531%, transparent 26.05531%, transparent 36.97234%, #d5eefb 36.97234%, #d5eefb 44.54148%, transparent 44.54148%, transparent 55.45852%, #d5eefb 55.45852%, #d5eefb 63.02766%, transparent 63.02766%, transparent 73.94469%, #d5eefb 73.94469%, #d5eefb 81.51383%, transparent 81.51383%, transparent 92.43086%, #d5eefb 92.43086%, #d5eefb 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1400px;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 9999; }
+  @media screen and (min-width: 25em) {
+    body:before {
+      background-image: linear-gradient(to left, transparent 0, #d5eefb 0, #d5eefb 7.56914%, transparent 7.56914%, transparent 18.48617%, #d5eefb 18.48617%, #d5eefb 26.05531%, transparent 26.05531%, transparent 36.97234%, #d5eefb 36.97234%, #d5eefb 44.54148%, transparent 44.54148%, transparent 55.45852%, #d5eefb 55.45852%, #d5eefb 63.02766%, transparent 63.02766%, transparent 73.94469%, #d5eefb 73.94469%, #d5eefb 81.51383%, transparent 81.51383%, transparent 92.43086%, #d5eefb 92.43086%, #d5eefb 100%, transparent 100%); } }
+  @media screen and (min-width: 48em) {
+    body:before {
+      background-image: linear-gradient(to left, transparent 0, #d5eefb 0, #d5eefb 3.58868%, transparent 3.58868%, transparent 8.76467%, #d5eefb 8.76467%, #d5eefb 12.35335%, transparent 12.35335%, transparent 17.52933%, #d5eefb 17.52933%, #d5eefb 21.11801%, transparent 21.11801%, transparent 26.294%, #d5eefb 26.294%, #d5eefb 29.88268%, transparent 29.88268%, transparent 35.05866%, #d5eefb 35.05866%, #d5eefb 38.64734%, transparent 38.64734%, transparent 43.82333%, #d5eefb 43.82333%, #d5eefb 47.41201%, transparent 47.41201%, transparent 52.58799%, #d5eefb 52.58799%, #d5eefb 56.17667%, transparent 56.17667%, transparent 61.35266%, #d5eefb 61.35266%, #d5eefb 64.94134%, transparent 64.94134%, transparent 70.11732%, #d5eefb 70.11732%, #d5eefb 73.706%, transparent 73.706%, transparent 78.88199%, #d5eefb 78.88199%, #d5eefb 82.47067%, transparent 82.47067%, transparent 87.64665%, #d5eefb 87.64665%, #d5eefb 91.23533%, transparent 91.23533%, transparent 96.41132%, #d5eefb 96.41132%, #d5eefb 100%, transparent 100%); } }
+  @media screen and (min-width: 60em) {
+    body:before {
+      background-image: linear-gradient(to left, transparent 0, #d5eefb 0, #d5eefb 3.58868%, transparent 3.58868%, transparent 8.76467%, #d5eefb 8.76467%, #d5eefb 12.35335%, transparent 12.35335%, transparent 17.52933%, #d5eefb 17.52933%, #d5eefb 21.11801%, transparent 21.11801%, transparent 26.294%, #d5eefb 26.294%, #d5eefb 29.88268%, transparent 29.88268%, transparent 35.05866%, #d5eefb 35.05866%, #d5eefb 38.64734%, transparent 38.64734%, transparent 43.82333%, #d5eefb 43.82333%, #d5eefb 47.41201%, transparent 47.41201%, transparent 52.58799%, #d5eefb 52.58799%, #d5eefb 56.17667%, transparent 56.17667%, transparent 61.35266%, #d5eefb 61.35266%, #d5eefb 64.94134%, transparent 64.94134%, transparent 70.11732%, #d5eefb 70.11732%, #d5eefb 73.706%, transparent 73.706%, transparent 78.88199%, #d5eefb 78.88199%, #d5eefb 82.47067%, transparent 82.47067%, transparent 87.64665%, #d5eefb 87.64665%, #d5eefb 91.23533%, transparent 91.23533%, transparent 96.41132%, #d5eefb 96.41132%, #d5eefb 100%, transparent 100%); } }
+  @media screen and (min-width: 106.25em) {
+    body:before {
+      background-image: linear-gradient(to left, transparent 0, #d5eefb 0, #d5eefb 3.58868%, transparent 3.58868%, transparent 8.76467%, #d5eefb 8.76467%, #d5eefb 12.35335%, transparent 12.35335%, transparent 17.52933%, #d5eefb 17.52933%, #d5eefb 21.11801%, transparent 21.11801%, transparent 26.294%, #d5eefb 26.294%, #d5eefb 29.88268%, transparent 29.88268%, transparent 35.05866%, #d5eefb 35.05866%, #d5eefb 38.64734%, transparent 38.64734%, transparent 43.82333%, #d5eefb 43.82333%, #d5eefb 47.41201%, transparent 47.41201%, transparent 52.58799%, #d5eefb 52.58799%, #d5eefb 56.17667%, transparent 56.17667%, transparent 61.35266%, #d5eefb 61.35266%, #d5eefb 64.94134%, transparent 64.94134%, transparent 70.11732%, #d5eefb 70.11732%, #d5eefb 73.706%, transparent 73.706%, transparent 78.88199%, #d5eefb 78.88199%, #d5eefb 82.47067%, transparent 82.47067%, transparent 87.64665%, #d5eefb 87.64665%, #d5eefb 91.23533%, transparent 91.23533%, transparent 96.41132%, #d5eefb 96.41132%, #d5eefb 100%, transparent 100%); } }
+
 a {
   text-decoration: none;
   font-family: "Merriweather", serif; }
@@ -137,9 +164,6 @@ p {
   font-family: "adelle-sans", serif; }
 
 header {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: "adelle-sans", serif;
   display: -ms-flexbox;
   display: flex;
@@ -149,13 +173,9 @@ header {
       justify-content: space-around;
   height: 200px;
   margin-top: 30px; }
-  header::after {
-    clear: both;
-    content: "";
-    display: table; }
 
 .header__container {
-  width: 85%;
+  width: 80%;
   height: 70px;
   margin: 0 auto;
   -ms-flex-item-align: center;
@@ -219,7 +239,6 @@ header {
       display: inline-block; } }
 
 footer {
-  background: #F6F7F7;
   height: 200px;
   text-align: center;
   color: #909292; }
@@ -258,40 +277,68 @@ footer {
 
 @media screen and (min-width: 48em) {
   .footer__container {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: start;
-        align-items: flex-start;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    height: 200px; }
-    .footer__container::after {
-      clear: both;
-      content: "";
-      display: table; }
-  .footer__content {
     float: left;
     display: block;
     margin-right: 5.17598%;
-    width: 100%; }
-    .footer__content:last-child {
+    width: 82.47067%;
+    margin-left: 8.76467%; }
+    .footer__container:last-child {
+      margin-right: 0; }
+  .footer__version {
+    float: left;
+    display: block;
+    margin-right: 6.27615%;
+    width: 25.60669%;
+    text-align: left; }
+    .footer__version:last-child {
+      margin-right: 0; }
+  .footer__copyright {
+    float: left;
+    display: block;
+    margin-right: 6.27615%;
+    width: 36.23431%;
+    text-align: center; }
+    .footer__copyright:last-child {
+      margin-right: 0; }
+  .footer__social {
+    float: left;
+    display: block;
+    margin-right: 6.27615%;
+    width: 25.60669%;
+    text-align: right; }
+    .footer__social:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 106.25em) {
+  .footer__container {
+    float: left;
+    display: block;
+    margin-right: 5.17598%;
+    width: 100%;
+    margin-left: 0%; }
+    .footer__container:last-child {
+      margin-right: 0; }
+  .footer__version {
+    float: left;
+    display: block;
+    margin-right: 5.17598%;
+    width: 21.11801%;
+    text-align: left; }
+    .footer__version:last-child {
       margin-right: 0; }
   .footer__copyright {
     float: left;
     display: block;
     margin-right: 5.17598%;
     width: 47.41201%;
-    text-align: left; }
+    text-align: center; }
     .footer__copyright:last-child {
       margin-right: 0; }
   .footer__social {
     float: left;
     display: block;
     margin-right: 5.17598%;
-    width: 47.41201%;
+    width: 21.11801%;
     text-align: right; }
     .footer__social:last-child {
       margin-right: 0; } }
@@ -325,18 +372,19 @@ footer {
   .hero__summary a {
     color: black; }
 
-@media screen and (min-width: 106.25em) {
-  .hero {
-    height: 200px;
-    padding: 0px;
-    margin-bottom: 100px; }
+@media screen and (min-width: 60em) {
   .hero__container {
     float: left;
     display: block;
     margin-right: 5.17598%;
-    width: 73.706%; }
+    width: 64.94134%;
+    margin-left: 8.76467%; }
     .hero__container:last-child {
       margin-right: 0; }
+  .hero {
+    height: 200px;
+    padding: 0px;
+    margin-bottom: 100px; }
   .hero__title {
     font-size: 2.1875em;
     line-height: 10px; }
