@@ -1,0 +1,20 @@
+@import 'neat/neat-helpers';
+
+$visual-grid: true !global;
+$visual-grid-color: #d5eefb !global;
+$visual-grid-index: back !global;
+
+//Change grid settings
+$column: em(85);
+$grid-columns: 6;
+$gutter: em(60);
+$max-width: 1366px;
+
+$mq-small: 		em(400);
+$mq-medium:     em(768);
+$mq-desktop:    em(1180);
+
+// Breakpoints
+$mobile:    	new-breakpoint(min-width $mq-small 6);
+$tablet:   		new-breakpoint(min-width $mq-medium 12);
+$desktop:  		new-breakpoint(min-width $mq-desktop 12);

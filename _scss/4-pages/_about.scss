@@ -1,0 +1,64 @@
+.about__container{
+	width: 85%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.about__image{
+	display: none;
+}
+
+/* Tablet Syling */
+
+@include media($tablet){
+
+	.about__container{
+		@include span-columns(12);
+		display: flex;
+    	height: 85vh;
+    	align-items: flex-start;
+    	//border: 1px solid black;
+
+	&:after{
+	    position: absolute;
+	    top: -170px;
+	    background: #F3F3F3;
+	    width: 382px;
+	    height: 485px;
+	    content: '';
+	    left: 190px;
+	    z-index: -999;
+		}
+	}
+
+	.about__image{
+		@include span-columns(2 of 12);
+		@include shift(1);
+		//margin-top: 140px;
+	}
+
+	.main__content{
+		@include span-columns(6 of 12);
+		@include shift(1);
+		align-self: center;
+		//border: 1px solid black;
+
+		p{
+			font-size: em(20);
+			line-height: 30px;
+		}
+
+		.main__content__title{
+			font-size: 38px;
+		}
+
+		.main__content__summary{
+			font-weight: 100;
+	    	font-size: 38px;
+	    	line-height: 50px;
+	    	color: $ash-grey;
+		}
+	}
+}
+
+/* Desktop Styling */

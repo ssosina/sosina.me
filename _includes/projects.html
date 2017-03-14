@@ -1,0 +1,21 @@
+<div class="main">
+
+  <div class="works">Selected works</div>
+
+    <div class="main__projects">
+      {% for project in site.data.settings.projects %}
+      <div class="project">
+        <div class="project__container">
+          <div class="project__summary">
+            
+            <p class="project__info">2016 – UI & UX – Web-Development</p>
+            <h2 class="project__title">{{ project.name }}</h2>
+          </div>
+
+          <a class="project__button" href="http://lateefsaka.com" target="_blank">view live site +</a>
+
+        </div>
+    </div>
+     {% endfor %}
+  </div>
+</div>

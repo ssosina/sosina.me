@@ -1,0 +1,25 @@
+body{
+	background-color: white;
+	color: black;
+	height: 100%;
+  	min-height: 100%;
+}
+
+.main{
+	@include outer-container();
+}
+
+.works{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+@include media ($desktop){
+
+	.works{
+		@include span-columns(8);
+		@include shift(2);
+	}
+}
+

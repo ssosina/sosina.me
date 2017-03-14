@@ -1,0 +1,88 @@
+.main__projects{
+	background: red;
+}
+
+.project{
+	width: 85%;
+	margin: 0 auto;
+	height: 300px;
+	margin-bottom: 60px;
+	padding:20px;
+	border-radius: 2px;
+	position: relative;
+	background: pink;
+}
+
+.project__button{
+	position: absolute;
+	bottom: 50px;
+	font-family: $heading2;
+	font-size: em(11);
+	text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.125em;
+}
+
+.project__info{
+	font-size: em(11);
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.09090909091em;
+
+    	&:after{
+		content: '';
+		height: 2px;
+		max-width: 40px;
+ 		width: 100%;
+		background: rgba(255,255,255,0.5);
+		display: block;
+		margin-top: 20px;
+	}
+}
+
+.project__title{
+
+	font-weight: 400;
+}
+
+@include media ($tablet){
+	.main__projects{
+		@include span-columns(10);
+		@include shift(1);
+	}
+
+	.project{
+		@include span-columns(5 of 10);
+		@include omega(2n);
+		height: 450px;
+	}
+
+}
+
+@include media ($desktop){
+	.main__projects{
+		@include span-columns(8);
+		@include shift(2);
+	}
+
+	.project{
+		@include span-columns(4 of 8);
+		@include omega(2n);
+		height: 400px;
+		padding: 40px;
+	}
+
+	.project__title{
+		font-size: em(28);
+	}
+
+	.project__info{
+    	&:after{
+    	top: 13%;
+		left: 40px;
+	}
+}
+
+}
+
