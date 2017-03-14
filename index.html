@@ -1,13 +1,23 @@
 ---
-layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+  
+  {% include header.html %}
+
+  {% include projects.html %}
+
+  {% include footer.html %}
+ 
+   <script src="https://use.fontawesome.com/7ac0553162.js"></script>
+  
+  </body>
+
+</html>
+ 

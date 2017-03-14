@@ -7,3 +7,9 @@ projects:
 - {name: Timeline page}
 - {name: Typo Internation}
 - {name: Strips & Co}
+
+social-links:
+- {name: 'fa fa-dribbble', link: 'https://dribbble.com/samsosina/'}
+- {name: 'fa fa-linkedin', link: 'https://www.linkedin.com/in/samsosina/'}
+- {name: 'fa fa-github',   link: 'https://github.com/ssosina/'}
+- {name: 'fa fa-codepen',  link: 'http://codepen.io/ssosina/'}

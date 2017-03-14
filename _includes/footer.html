@@ -6,11 +6,9 @@
             <p class="footer__copyright">© Samuel Sosina 2016 </p>
 
             <ul class="footer__social">
-              <li><a href="https://dribbble.com/samsosina" target="_blank">Dribbble</a></li>
-              <li><a href="https://www.linkedin.com/in/samsosina/" target="_blank">Linkedin</a></li>
-              <li><a href="https://github.com/ssosina/" target="_blank">Github</a></li>
-              <li><a href="http://codepen.io/ssosina/" target="_blank">Codepen</a></li>
-          
+            {% for social-link in site.data.settings.social-links %}
+              <li><a href="{{ social-link.link }}" target="_blank"><i class="{{ social-link.name }}" aria-hidden="true"></i></a></li>
+             {% endfor %}
             </ul>
           </div>
         </div>
