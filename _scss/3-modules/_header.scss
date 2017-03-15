@@ -1,18 +1,15 @@
 header{
+	@include outer-container();
    	font-family: $heading2;
-   	display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    height: 200px;
-    margin-top: 30px;
-    @include outer-container();
+    margin: 30px 0px 50px 0px;
+    border: 1px solid black;
 }
 
 .header__container{
-	width: 85%;
+	width: 80%;
 	height: 70px;
 	margin: 0 auto;
-	align-self: center;
+	border: 1px solid black;
 }
 
 .header__logo{
@@ -38,11 +35,36 @@ header{
 	}
 }
 
+/**** Tablet *****/
+
+@include media($tablet){
+	.header__container{
+		@include span-columns(10);
+		@include shift(1);
+		height: 25px;
+		border: 1px solid black;
+	}
+
+	.header__logo{
+		@include span-columns(1 of 10);
+	}
+
+	.header__nav{
+		@include span-columns(9 of 10);
+		text-align: right;
+
+		li{
+			display: inline-block;
+		}
+	}
+}
+
+/**** large desktop  *****/
+
 @include media ($large-desktop){
 
 	header{
-		//background: red;
-		//border: 1px solid black;
+		background: yellow;
 		height: 90px;
 		margin-bottom: 100px;
 	}
@@ -50,16 +72,14 @@ header{
 	.header__container{
 		@include span-columns(12);
 		height: 25px;
-
-		//border: 1px solid black;
 	}
 
 	.header__logo{
-		@include span-columns(1);
+		@include span-columns(1 of 12);
 	}
 
 	.header__nav{
-		@include span-columns(11);
+		@include span-columns(11 of 12);
 		text-align: right;
 
 		li{

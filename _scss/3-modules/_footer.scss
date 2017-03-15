@@ -1,21 +1,18 @@
 footer{
 	@include outer-container();
-	height: 200px;
+	height: 70px;
     text-align: center;
     color: #909292;
+    border: 1px solid black;
 }
 
 .footer__container{
-	display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    height: 200px;
     width: 80%;
 	margin: 0 auto;
+    border: 1px solid black;
 }
 
 .footer__content{
-	align-self: center;
 }
 
 .footer__social{
@@ -63,9 +60,9 @@ footer{
 
 	.footer__social{
 		@include span-columns(3 of 10);
-		text-align: right;
-		
+		text-align: right;	
 	}
+
 }
 
 @include media ($large-desktop){
@@ -73,7 +70,6 @@ footer{
 	.footer__container{
 		@include span-columns(12);
 		@include shift(0);
-    	
 	}
 
 	.footer__version{
@@ -90,8 +86,6 @@ footer{
 	.footer__social{
 		@include span-columns(3 of 12);
 		text-align: right;
-		
 	}
 
-	
 }

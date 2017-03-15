@@ -16,7 +16,7 @@ $mq-l :  em(960);
 $mq-xl:  em(1700);
 
 // Breakpoints
-$mobile:    	new-breakpoint(min-width $mq-s 6);
-$tablet:   		new-breakpoint(min-width $mq-m 12);
-$desktop:  		new-breakpoint(min-width $mq-l 12);
-$large-desktop: new-breakpoint(min-width $mq-xl 12);
+$mobile:    		new-breakpoint(min-width $mq-s 6);
+$tablet:   			new-breakpoint(min-width $mq-m 12);
+$desktop:  			new-breakpoint(min-width $mq-l 12);
+$large-desktop:		new-breakpoint(min-width $mq-xl 12);
