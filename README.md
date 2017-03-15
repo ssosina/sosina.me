@@ -11,3 +11,7 @@ Portfolio site using Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
 4. [Sass](http://sass-lang.com/) – We've been friends for years, I cannot do without Sass
 5. [Bourbon](http://bourbon.io/) – It has some cool mixins  
 6. [Neat](http://neat.bourbon.io/) – Provides a slick lightweight grid system
+
+## Remeber
+
+`Sudo Gem install Bourbon` and `Neat`. Then install both in to the project - `Bourbon install` &amp `Neat install`
