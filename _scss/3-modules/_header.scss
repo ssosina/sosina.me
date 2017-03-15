@@ -1,15 +1,15 @@
 header{
 	@include outer-container();
    	font-family: $heading2;
-    margin: 30px 0px 50px 0px;
-    border: 1px solid black;
+  	margin-top: 60px;
+    //border: 1px solid black;
 }
 
 .header__container{
 	width: 80%;
 	height: 70px;
 	margin: 0 auto;
-	border: 1px solid black;
+	//border: 1px solid black;
 }
 
 .header__logo{
@@ -20,29 +20,21 @@ header{
 }
 
 .header__nav{
-	padding: 0px;
-	margin: 0px;
-	@include span-columns(6);
-
-	li{
-		display: inline-block;
-		margin-right: 10px;
-
-		a{
-			color: black;
-			font-family: $heading2;
-		}
-	}
+	display: none
 }
 
 /**** Tablet *****/
 
 @include media($tablet){
+	header{
+	height: 90px;
+	}
+
 	.header__container{
 		@include span-columns(10);
 		@include shift(1);
 		height: 25px;
-		border: 1px solid black;
+		//border: 1px solid black;
 	}
 
 	.header__logo{
@@ -55,6 +47,12 @@ header{
 
 		li{
 			display: inline-block;
+			margin-right: 10px;
+
+			a{
+				color: black;
+				font-family: $heading2;
+			}
 		}
 	}
 }
@@ -64,13 +62,14 @@ header{
 @include media ($large-desktop){
 
 	header{
-		background: yellow;
-		height: 90px;
+		//background: yellow;
+		height: auto;
 		margin-bottom: 100px;
 	}
 
 	.header__container{
 		@include span-columns(12);
+		@include shift(0);
 		height: 25px;
 	}
 

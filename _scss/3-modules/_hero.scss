@@ -8,7 +8,7 @@
 	width: 80%;
 	height: 100%;
 	margin: 0 auto;
-	    border: 1px solid black;
+	    //border: 1px solid black;
 }
 
 .hero__title{
@@ -56,8 +56,10 @@
 
 @include media ($large-desktop){
 	.hero__container{
-		//@include span-columns(8 of 12);
+		@include span-columns(10 of 12);
 		@include shift(0);
 	}
+
+
 }
 
