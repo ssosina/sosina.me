@@ -339,7 +339,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-top: 65px; }
   .hero::after {
     clear: both;
     content: "";
@@ -357,30 +358,37 @@ footer {
 
 .hero__summary {
   color: #B3B3B3;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 1.375em;
   line-height: 32px; }
   .hero__summary a {
     color: black; }
 
+@media screen and (min-width: 48em) {
+  .hero {
+    padding: 0px;
+    margin-bottom: 100px;
+    margin-top: 130px; } }
+
 @media screen and (min-width: 60em) {
+  .hero {
+    height: 200px;
+    padding: 0px;
+    margin-bottom: 100px;
+    margin-top: 130px; }
   .hero__container {
     float: left;
     display: block;
     margin-right: 5.17598%;
-    width: 64.94134%;
+    width: 82.47067%;
     margin-left: 8.76467%; }
     .hero__container:last-child {
       margin-right: 0; }
-  .hero {
-    height: 200px;
-    padding: 0px;
-    margin-bottom: 100px; }
   .hero__title {
     font-size: 2.1875em;
     line-height: 10px; }
   .hero__summary {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 2.1875em;
     line-height: 50px; } }
 
