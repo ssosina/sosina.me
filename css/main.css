@@ -359,7 +359,7 @@ footer {
 .hero {
   width: 100%;
   text-align: left;
-  background: black;
+  background: #061A40;
   border: 15px solid white;
   height: 60vh;
   display: -ms-flexbox;
