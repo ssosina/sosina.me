@@ -1,10 +1,7 @@
 footer{
     text-align: left;
-    height: 15vh;
+    height: 35vh;
     background: #F2F2F2;
-    border-left: 15px solid white;
-	border-right: 15px solid white;
-	border-bottom: 15px solid white;
 	display: flex;
     align-items: flex-start;
 }
@@ -39,6 +36,7 @@ footer{
 		font-family: $heading3;
 		font-size: em(13);
 		letter-spacing: 0.13em;
+		margin: 60px 0px;
 	a{
 		color: grey;
 	}
@@ -80,6 +78,7 @@ footer{
 		font-family: $heading3;
 		font-size: em(13);
 		letter-spacing: 0.13em;
+		margin: 0px;
 	}
 
 	.footer__social{
@@ -87,6 +86,16 @@ footer{
 		text-align: right;	
 	}
 
+}
+
+@include media ($desktop){
+	footer{
+	    height: 15vh;
+	    border-left: 15px solid white;
+		border-right: 15px solid white;
+		border-bottom: 15px solid white;
+	
+	}
 }
 
 @include media ($large-desktop){

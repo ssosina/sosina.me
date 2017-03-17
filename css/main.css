@@ -231,11 +231,8 @@ header {
 
 footer {
   text-align: left;
-  height: 15vh;
+  height: 35vh;
   background: #F2F2F2;
-  border-left: 15px solid white;
-  border-right: 15px solid white;
-  border-bottom: 15px solid white;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
@@ -270,7 +267,8 @@ footer {
   text-align: left;
   font-family: "Menlo", serif;
   font-size: 0.8125em;
-  letter-spacing: 0.13em; }
+  letter-spacing: 0.13em;
+  margin: 60px 0px; }
   .footer__copyright a {
     color: grey; }
 
@@ -310,7 +308,8 @@ footer {
     text-align: center;
     font-family: "Menlo", serif;
     font-size: 0.8125em;
-    letter-spacing: 0.13em; }
+    letter-spacing: 0.13em;
+    margin: 0px; }
     .footer__copyright:last-child {
       margin-right: 0; }
   .footer__social {
@@ -321,6 +320,13 @@ footer {
     text-align: right; }
     .footer__social:last-child {
       margin-right: 0; } }
+
+@media screen and (min-width: 60em) {
+  footer {
+    height: 15vh;
+    border-left: 15px solid white;
+    border-right: 15px solid white;
+    border-bottom: 15px solid white; } }
 
 @media screen and (min-width: 106.25em) {
   .footer__container {
