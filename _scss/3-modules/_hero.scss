@@ -2,7 +2,7 @@
 	width: 100%;
 	text-align: left;
     background: #061A40;
-    border: 15px solid white;
+    
     height: 60vh;
     display: flex;
     align-items: flex-start;
@@ -11,7 +11,6 @@
 .hero__container{
 	width: 80%;
 	margin: 0 auto;
-
     align-self: center;
 }
 
@@ -29,13 +28,13 @@
 .hero__summary{
 	color: white;
 	font-weight: $thin;
-	font-family: "Monaco",serif;
+	font-family: $heading3;
 	font-size: 16px;
 	line-height: 26px;
 
 	a{
 		color: white;
-		font-family: "Monaco",serif;
+		font-family: $heading3;
 	}
 }
 
@@ -43,6 +42,7 @@
 
 	.hero{
 		height: 35vh;
+		border: 10px solid white;
 		padding: 0px;
 	}
 
