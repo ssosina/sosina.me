@@ -238,8 +238,9 @@ footer {
   margin-left: auto;
   margin-right: auto;
   height: 70px;
-  text-align: center;
-  color: #909292; }
+  text-align: left;
+  color: #909292;
+  margin-bottom: 50px; }
   footer::after {
     clear: both;
     content: "";

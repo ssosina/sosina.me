@@ -1,9 +1,11 @@
 footer{
 	@include outer-container();
 	height: 70px;
-    text-align: center;
+    text-align: left;
     color: #909292;
     //border: 1px solid black;
+    margin-bottom: 50px;
+
 }
 
 .footer__container{
