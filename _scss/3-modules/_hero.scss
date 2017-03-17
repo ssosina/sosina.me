@@ -1,45 +1,58 @@
 .hero{
-	@include outer-container();
+	width: 100%;
 	text-align: left;
-    margin-bottom: 50px;
+    background: #061A40;
+    border: 15px solid white;
+    height: 60vh;
+    display: flex;
+    align-items: flex-start;
 }
 
 .hero__container{
 	width: 80%;
-	height: 100%;
 	margin: 0 auto;
-	    //border: 1px solid black;
+
+    align-self: center;
+}
+
+.hero__email-link{
+	text-decoration: underline;
 }
 
 .hero__title{
 	font-weight: $regular;
 	font-size: em(26);
 	line-height: 10px;
+	color: white;
 }
 
 .hero__summary{
-	color: $ash-grey;
+	color: white;
 	font-weight: $thin;
-	font-size: em(22);
-	line-height: 32px;
+	font-family: "Monaco",serif;
+	font-size: 16px;
+	line-height: 26px;
 
 	a{
-		color: black;
+		color: white;
+		font-family: "Monaco",serif;
 	}
 }
 
 @include media ($desktop){
-	.hero__container{
-		@include span-columns(8 of 12);
-		@include shift(1);
-	}
 
-		.hero{
-		height: 200px;
+	.hero{
+		height: 35vh;
 		padding: 0px;
-		margin-bottom: 100px;
 	}
 
+	.hero__container{
+		@include outer-container;
+	}
+
+	.hero__content{
+		@include span-columns(8 of 12);
+	}
 
 	.hero__title{
 		font-size: em(35);
@@ -48,18 +61,16 @@
 
 	.hero__summary{
 		font-weight: $thin;
-		font-size: em(35);
-		line-height: 50px;
+		font-size: em(18);
+		line-height: 35px;
 	}
 
 }
 
 @include media ($large-desktop){
+
 	.hero__container{
-		@include span-columns(10 of 12);
-		@include shift(0);
 	}
-
-
+	
 }
 
