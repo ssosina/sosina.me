@@ -1,6 +1,16 @@
-.main__projects{
-	//background: red;
+.main{
+	width: 100%;
+	border-left: 15px solid white;
+	border-right: 15px solid white;
+	//border-bottom: 15px solid white;
+	background-color: #F2F2F2;
+	padding-top: 100px;
 }
+
+.main__container{
+	@include outer-container();
+}
+
 .project{
 	width: 80%;
 	margin: 0 auto;
@@ -12,7 +22,6 @@
 	img{
 		width: 100%;
 		height: auto;
-		border: 10px solid white;
 		border-radius: 2px;
 		transition: opacity 0.25s ease-in-out;
 
@@ -66,4 +75,3 @@
 		font-size: em(25);
 	}
 }
-

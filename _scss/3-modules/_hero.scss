@@ -1,33 +1,60 @@
 .hero{
-	@include outer-container();
+	width: 100%;
 	text-align: left;
+<<<<<<< HEAD
     margin-bottom: 50px;
     margin-top: 65px;
+=======
+    background: #061A40;
+    border: 15px solid white;
+    height: 60vh;
+    display: flex;
+    align-items: flex-start;
+>>>>>>> master
 }
 
 .hero__container{
 	width: 80%;
-	height: 100%;
 	margin: 0 auto;
+<<<<<<< HEAD
+=======
+
+    align-self: center;
+}
+
+.hero__email-link{
+	text-decoration: underline;
+>>>>>>> master
 }
 
 .hero__title{
 	font-weight: $regular;
 	font-size: em(26);
 	line-height: 10px;
+	color: white;
 }
 
 .hero__summary{
+<<<<<<< HEAD
 	color: $ash-grey;
 	font-weight: $regular;
 	font-size: em(22);
 	line-height: 32px;
+=======
+	color: white;
+	font-weight: $thin;
+	font-family: "Monaco",serif;
+	font-size: 16px;
+	line-height: 26px;
+>>>>>>> master
 
 	a{
-		color: black;
+		color: white;
+		font-family: "Monaco",serif;
 	}
 }
 
+<<<<<<< HEAD
 @include media ($tablet){
 
 	.hero{
@@ -49,8 +76,22 @@
 	.hero__container{
 		@include span-columns(10 of 12);
 		@include shift(1);
+=======
+@include media ($desktop){
+
+	.hero{
+		height: 35vh;
+		padding: 0px;
+>>>>>>> master
 	}
 
+	.hero__container{
+		@include outer-container;
+	}
+
+	.hero__content{
+		@include span-columns(8 of 12);
+	}
 
 	.hero__title{
 		font-size: em(35);
@@ -58,19 +99,23 @@
 	}
 
 	.hero__summary{
+<<<<<<< HEAD
 		font-weight: $regular;
 		font-size: em(35);
 		line-height: 50px;
+=======
+		font-weight: $thin;
+		font-size: em(18);
+		line-height: 35px;
+>>>>>>> master
 	}
 
 }
 
 @include media ($large-desktop){
+
 	.hero__container{
-		@include span-columns(10 of 12);
-		@include shift(0);
 	}
-
-
+	
 }
 

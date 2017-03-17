@@ -1,18 +1,22 @@
 footer{
-	@include outer-container();
-	height: 70px;
-    text-align: center;
-    color: #909292;
-    //border: 1px solid black;
+    text-align: left;
+    height: 15vh;
+    background: #F2F2F2;
+    border-left: 15px solid white;
+	border-right: 15px solid white;
+	border-bottom: 15px solid white;
+	display: flex;
+    align-items: flex-start;
 }
 
 .footer__container{
     width: 80%;
 	margin: 0 auto;
-   // border: 1px solid black;
+	align-self: center;
 }
 
 .footer__content{
+	@include outer-container();
 }
 
 .footer__social{
@@ -25,20 +29,38 @@ footer{
 
    		a{
    			color: black;
-   			font-size: 23px;
+   			font-size: em(20);
    		}
 	}
 }
 
 .footer__copyright{
-	font-size: em(18);
-	font-weight: 500;
-	color: #0A1128;
-
+		text-align: left;
+		font-family: "Monaco",serif;
+		font-size: em(13);
+		letter-spacing: 0.13em;
 	a{
 		color: grey;
 	}
 }
+
+.footer__version{
+		text-align: left;
+		font-family: "Monaco",serif;
+		font-size: em(11);
+		text-transform: uppercase;
+		letter-spacing: 0.13em;
+}
+
+	.footer__social{
+	
+	text-align: left;
+		
+		li:first-child{
+			margin-left: 0px;
+		}
+
+	}
 
 @include media ($tablet){
 
@@ -49,13 +71,15 @@ footer{
 
 	.footer__version{
 		@include span-columns(3 of 10);
-		text-align: left;
+
 	}
 
 	.footer__copyright{
 		@include span-columns(4 of 10);
 		text-align: center;
-		
+		font-family: "Monaco",serif;
+		font-size: em(13);
+		letter-spacing: 0.13em;
 	}
 
 	.footer__social{
