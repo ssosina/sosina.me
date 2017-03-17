@@ -60,8 +60,9 @@
 
 @include media ($desktop){
 	.main{
-	border-left: 15px solid white;
-	border-right: 15px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	border-bottom: 10px solid white;
 	}
 }
 @include media ($large-desktop){

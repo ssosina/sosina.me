@@ -231,8 +231,8 @@ header {
 
 footer {
   text-align: left;
-  height: 35vh;
-  background: #F2F2F2;
+  height: 250px;
+  background: white;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
@@ -268,7 +268,7 @@ footer {
   font-family: "Menlo", serif;
   font-size: 0.8125em;
   letter-spacing: 0.13em;
-  margin: 60px 0px; }
+  margin: 30px 0px; }
   .footer__copyright a {
     color: grey; }
 
@@ -277,14 +277,18 @@ footer {
   font-family: "Menlo", serif;
   font-size: 0.6875em;
   text-transform: uppercase;
-  letter-spacing: 0.13em; }
+  letter-spacing: 0.13em;
+  margin: 0px; }
 
 .footer__social {
-  text-align: left; }
+  text-align: left;
+  margin-top: 0px; }
   .footer__social li:first-child {
     margin-left: 0px; }
 
 @media screen and (min-width: 48em) {
+  footer {
+    height: 110px; }
   .footer__container {
     float: left;
     display: block;
@@ -323,12 +327,15 @@ footer {
 
 @media screen and (min-width: 60em) {
   footer {
-    height: 15vh;
-    border-left: 15px solid white;
-    border-right: 15px solid white;
-    border-bottom: 15px solid white; } }
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white; }
+  .footer__container {
+    height: 20px; } }
 
 @media screen and (min-width: 106.25em) {
+  footer {
+    height: 110px; }
   .footer__container {
     float: left;
     display: block;
@@ -490,8 +497,9 @@ footer {
 
 @media screen and (min-width: 60em) {
   .main {
-    border-left: 15px solid white;
-    border-right: 15px solid white; } }
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white; } }
 
 @media screen and (min-width: 106.25em) {
   .main__projects {
