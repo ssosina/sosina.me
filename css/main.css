@@ -268,7 +268,7 @@ footer {
 
 .footer__copyright {
   text-align: left;
-  font-family: "Monaco",serif;
+  font-family: "Menlo", serif;
   font-size: 0.8125em;
   letter-spacing: 0.13em; }
   .footer__copyright a {
@@ -276,7 +276,7 @@ footer {
 
 .footer__version {
   text-align: left;
-  font-family: "Monaco",serif;
+  font-family: "Menlo", serif;
   font-size: 0.6875em;
   text-transform: uppercase;
   letter-spacing: 0.13em; }
@@ -308,7 +308,7 @@ footer {
     margin-right: 6.27615%;
     width: 36.23431%;
     text-align: center;
-    font-family: "Monaco",serif;
+    font-family: "Menlo", serif;
     font-size: 0.8125em;
     letter-spacing: 0.13em; }
     .footer__copyright:last-child {
@@ -360,7 +360,6 @@ footer {
   width: 100%;
   text-align: left;
   background: #061A40;
-  border: 15px solid white;
   height: 60vh;
   display: -ms-flexbox;
   display: flex;
@@ -385,7 +384,7 @@ footer {
 .hero__summary {
   color: white;
   font-weight: 100;
-  font-family: "Monaco",serif;
+  font-family: "Menlo", serif;
   font-size: 16px;
   line-height: 26px; }
   .hero__summary a {
@@ -395,6 +394,7 @@ footer {
 @media screen and (min-width: 60em) {
   .hero {
     height: 35vh;
+    border: 10px solid white;
     padding: 0px; }
   .hero__container {
     max-width: 1400px;
@@ -421,8 +421,6 @@ footer {
 
 .main {
   width: 100%;
-  border-left: 15px solid white;
-  border-right: 15px solid white;
   background-color: #F2F2F2;
   padding-top: 100px; }
 
@@ -483,6 +481,11 @@ footer {
       margin-right: 0; }
     .project:nth-child(2n+1) {
       clear: left; } }
+
+@media screen and (min-width: 60em) {
+  .main {
+    border-left: 15px solid white;
+    border-right: 15px solid white; } }
 
 @media screen and (min-width: 106.25em) {
   .main__projects {

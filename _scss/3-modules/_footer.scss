@@ -36,7 +36,7 @@ footer{
 
 .footer__copyright{
 		text-align: left;
-		font-family: "Monaco",serif;
+		font-family: $heading3;
 		font-size: em(13);
 		letter-spacing: 0.13em;
 	a{
@@ -46,7 +46,7 @@ footer{
 
 .footer__version{
 		text-align: left;
-		font-family: "Monaco",serif;
+		font-family: $heading3;
 		font-size: em(11);
 		text-transform: uppercase;
 		letter-spacing: 0.13em;
@@ -77,7 +77,7 @@ footer{
 	.footer__copyright{
 		@include span-columns(4 of 10);
 		text-align: center;
-		font-family: "Monaco",serif;
+		font-family: $heading3;
 		font-size: em(13);
 		letter-spacing: 0.13em;
 	}

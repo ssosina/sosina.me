@@ -2,7 +2,7 @@
 	width: 100%;
 	text-align: left;
     background: #061A40;
-    border: 15px solid white;
+    
     height: 60vh;
     display: flex;
     align-items: flex-start;
@@ -28,7 +28,7 @@
 .hero__summary{
 	color: white;
 	font-weight: $thin;
-	font-family: "Monaco",serif;
+	font-family: $heading3;
 	font-size: 16px;
 	line-height: 26px;
 
@@ -42,6 +42,7 @@
 
 	.hero{
 		height: 35vh;
+		border: 10px solid white;
 		padding: 0px;
 	}
 

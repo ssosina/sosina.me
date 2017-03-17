@@ -1,8 +1,6 @@
 .main{
 	width: 100%;
-	border-left: 15px solid white;
-	border-right: 15px solid white;
-	//border-bottom: 15px solid white;
+
 	background-color: #F2F2F2;
 	padding-top: 100px;
 }
@@ -60,6 +58,12 @@
 	}
 }
 
+@include media ($desktop){
+	.main{
+	border-left: 15px solid white;
+	border-right: 15px solid white;
+	}
+}
 @include media ($large-desktop){
 
 	.main__projects{
