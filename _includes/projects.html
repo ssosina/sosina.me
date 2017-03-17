@@ -8,17 +8,11 @@
 
     {% for project in site.data.settings.projects %}
 
-<<<<<<< HEAD
     <div class="project">
-=======
-    <a class="project__thumb" href="{{ project.url }}" target="_blank">
+
+         <a class="project__thumb" href="{{ project.url }}" target="_blank">
       <img src="{{ site.baseurl }}/img/{{ project.thumbnail }}">
     </a>
->>>>>>> origin/master
-
-      <a class="project__thumb" href="{{ project.url }}" target="_blank">
-        <img src="{{ project.thumbnail }}">
-      </a>
 
       <div class="project__summary">
         <h2 class="project__title">{{ project.name }}</h2>
@@ -34,5 +28,3 @@
   </div>
 
 </div>
-
-
