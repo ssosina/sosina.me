@@ -406,7 +406,7 @@ footer {
 
 @media screen and (min-width: 60em) {
   .hero {
-    height: 35vh;
+    height: 50vh;
     border: 10px solid white;
     padding: 0px; }
   .hero__container {
