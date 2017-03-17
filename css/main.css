@@ -359,14 +359,6 @@ footer {
 .hero {
   width: 100%;
   text-align: left;
-<<<<<<< HEAD
-  margin-bottom: 50px;
-  margin-top: 65px; }
-  .hero::after {
-    clear: both;
-    content: "";
-    display: table; }
-=======
   background: #061A40;
   border: 15px solid white;
   height: 60vh;
@@ -374,7 +366,6 @@ footer {
   display: flex;
   -ms-flex-align: start;
       align-items: flex-start; }
->>>>>>> master
 
 .hero__container {
   width: 80%;
@@ -392,39 +383,19 @@ footer {
   color: white; }
 
 .hero__summary {
-<<<<<<< HEAD
-  color: #B3B3B3;
-  font-weight: 400;
-  font-size: 1.375em;
-  line-height: 32px; }
-=======
   color: white;
   font-weight: 100;
   font-family: "Monaco",serif;
   font-size: 16px;
   line-height: 26px; }
->>>>>>> master
   .hero__summary a {
     color: white;
     font-family: "Monaco",serif; }
 
-@media screen and (min-width: 48em) {
-  .hero {
-    padding: 0px;
-    margin-bottom: 100px;
-    margin-top: 130px; } }
-
 @media screen and (min-width: 60em) {
   .hero {
-<<<<<<< HEAD
-    height: 200px;
-    padding: 0px;
-    margin-bottom: 100px;
-    margin-top: 130px; }
-=======
     height: 35vh;
     padding: 0px; }
->>>>>>> master
   .hero__container {
     max-width: 1400px;
     margin-left: auto;
@@ -437,28 +408,16 @@ footer {
     float: left;
     display: block;
     margin-right: 5.17598%;
-<<<<<<< HEAD
-    width: 82.47067%;
-    margin-left: 8.76467%; }
-    .hero__container:last-child {
-=======
     width: 64.94134%; }
     .hero__content:last-child {
->>>>>>> master
       margin-right: 0; }
   .hero__title {
     font-size: 2.1875em;
     line-height: 10px; }
   .hero__summary {
-<<<<<<< HEAD
-    font-weight: 400;
-    font-size: 2.1875em;
-    line-height: 50px; } }
-=======
     font-weight: 100;
     font-size: 1.125em;
     line-height: 35px; } }
->>>>>>> master
 
 .main {
   width: 100%;
