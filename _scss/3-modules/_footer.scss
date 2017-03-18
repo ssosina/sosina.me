@@ -1,18 +1,20 @@
 footer{
-	@include outer-container();
-	height: 70px;
-    text-align: center;
-    color: #909292;
-    //border: 1px solid black;
+    text-align: left;
+    height: 250px;
+    background: white;
+	display: flex;
+    align-items: flex-start;
 }
 
 .footer__container{
     width: 80%;
 	margin: 0 auto;
-   // border: 1px solid black;
+	align-self: center;
+	//border: 1px solid black;
 }
 
 .footer__content{
+	@include outer-container();
 }
 
 .footer__social{
@@ -25,22 +27,47 @@ footer{
 
    		a{
    			color: black;
-   			font-size: 23px;
+   			font-size: em(20);
    		}
 	}
 }
 
 .footer__copyright{
-	font-size: em(18);
-	font-weight: 500;
-	color: #0A1128;
-
+		text-align: left;
+		font-family: $heading3;
+		font-size: em(13);
+		letter-spacing: 0.13em;
+		margin: 30px 0px;
 	a{
 		color: grey;
 	}
 }
 
+.footer__version{
+		text-align: left;
+		font-family: $heading3;
+		font-size: em(11);
+		text-transform: uppercase;
+		letter-spacing: 0.13em;
+		margin: 0px;
+}
+
+	.footer__social{
+	
+	text-align: left;
+	margin-top: 0px;
+		
+		li:first-child{
+			margin-left: 0px;
+		}
+
+	}
+
 @include media ($tablet){
+
+	footer{
+		height: 110px;
+	}
 
 	.footer__container{
 		@include span-columns(10);
@@ -49,13 +76,16 @@ footer{
 
 	.footer__version{
 		@include span-columns(3 of 10);
-		text-align: left;
+
 	}
 
 	.footer__copyright{
 		@include span-columns(4 of 10);
 		text-align: center;
-		
+		font-family: $heading3;
+		font-size: em(13);
+		letter-spacing: 0.13em;
+		margin: 0px;
 	}
 
 	.footer__social{
@@ -65,7 +95,25 @@ footer{
 
 }
 
+@include media ($desktop){
+	footer{
+	    border-left: 10px solid white;
+		border-right: 10px solid white;
+		border-bottom: 10px solid white;
+	}
+
+	.footer__container{
+		height: 20px;
+	}
+}
+
 @include media ($large-desktop){
+
+	footer{
+		height: 110px;
+		//background: blue;
+		
+	}
 
 	.footer__container{
 		@include span-columns(12);

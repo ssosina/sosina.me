@@ -1,25 +1,29 @@
 <div class="main">
 
-<div class="works">Selected works</div>
+  <div class="main__container">
 
-  <div class="main__projects">
+  <div class="works">Selected works</div>
 
-  {% for project in site.data.settings.projects %}
+    <div class="main__projects">
 
-  <div class="project">
+    {% for project in site.data.settings.projects %}
 
-    <a class="project__thumb" href="{{ project.url }}" target="_blank">
-      <img src="{{ site.baseurl }}/img/{{ project.thumbnail }}">
+    <div class="project">
+
+         <a class="project__thumb" href="{{ project.url }}" target="_blank">
+      <img src="{{ site.baseurl }}img/{{ project.thumbnail }}">
     </a>
 
-    <div class="project__summary">
-      <h2 class="project__title">{{ project.name }}</h2>
-      <p class="project__info">{{ project.year }} – {{ project.role }}</p>
+      <div class="project__summary">
+        <h2 class="project__title">{{ project.name }}</h2>
+        <p class="project__info">{{ project.year }} – {{ project.role }}</p>
+      </div>
+      
     </div>
-    
-  </div>
 
-  {% endfor %}
+    {% endfor %}
+
+    </div>
 
   </div>
 
