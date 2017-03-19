@@ -1,5 +1,5 @@
 projects: 
-- {name: Lateefsaka.com,        url: 'http://lateefsaka.com', thumbnail: '../img/lateefsaka-thumb.png'      ,year: 2017, role: UI – Web-development}
+- {name: Lateef Saka,        url: 'http://lateefsaka.com', thumbnail: '../img/lateefsaka-thumb.png'      ,year: 2017, role: UI – Web-development}
 - {name: SWNS Reporter,         url: 'http://matdisalvo.com', thumbnail: '../img/matdisalvo-thumb.png'      ,year: 2017, role: UI – Web-development }
 - {name: Northplains,           url: '',                      thumbnail: '../img/nps-thumb.png'             ,year: 2015, role: Email design & development – marketing design}
 - {name: Xinet Documentation,   url: 'http://docs.xinet.com', thumbnail: '../img/xinet-thumb.png'           ,year: 2016, role: UI – web-development}
