@@ -406,7 +406,7 @@ footer {
 
 @media screen and (min-width: 60em) {
   .hero {
-    height: 50vh;
+    height: 40vh;
     border: 10px solid white;
     padding: 0px; }
   .hero__container {
@@ -431,6 +431,12 @@ footer {
     font-weight: 100;
     font-size: 1.125em;
     line-height: 35px; } }
+
+@media screen and (min-width: 106.25em) {
+  .hero {
+    height: 40vh;
+    border: 10px solid white;
+    padding: 0px; } }
 
 .main {
   width: 100%;
