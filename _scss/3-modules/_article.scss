@@ -16,10 +16,15 @@
 	margin-bottom: 60px;
 	border-radius: 2px;
 	position: relative;
+	text-align: center;
+
+	a{
+		display: inline-block;
+	}
 
 	img{
-		width: 100%;
-		height: auto;
+		max-width: 100%;
+		//height: auto;
 		border-radius: 2px;
 		transition: opacity 0.25s ease-in-out;
 
@@ -29,11 +34,13 @@
 	}
 }
 
+.project__summary{
+	text-align: center;
+}
+
 .project__info{
 	font-size: em(13);
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 0.09090909091em;
+	font-family: $caption;
 }
 
 .project__title{
@@ -46,9 +53,13 @@
 }
 
 @include media ($tablet){
+
 	.main__projects{
-		@include span-columns(10);
-		@include shift(1);
+		@include span-columns(12);
+	}
+
+	.main__container{
+		@include outer-container(90%);
 	}
 
 	.project{
@@ -58,25 +69,27 @@
 	}
 }
 
+
 @include media ($desktop){
 	.main{
-	border-left: 10px solid white;
-	border-right: 10px solid white;
-	border-bottom: 10px solid white;
+		border-left: 10px solid white;
+		border-right: 10px solid white;
+		border-bottom: 10px solid white;
 	}
-}
-@include media ($large-desktop){
 
-	.main__projects{
-		@include span-columns(12);
-		@include shift(0);
+	.main__container{
+		@include outer-container(90%);
 	}
 
 	.project{
+		 @include omega-reset(2n);
+	  @include span-columns(4 of 12);
+	  @include omega(3n);
 		margin-bottom: 100px;
 	}
-
-	.project__title{
-		font-size: em(25);
+}
+@include media ($large-desktop){
+	.main__container{
+		@include outer-container();
 	}
 }
