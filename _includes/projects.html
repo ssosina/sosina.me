@@ -8,17 +8,16 @@
 
     {% for project in site.data.settings.projects %}
 
-    <div class="project">
-
-         <a class="project__thumb" href="{{ project.url }}" target="_blank">
-      <img src="{{ site.baseurl }}img/{{ project.thumbnail }}">
-    </a>
-
-      <div class="project__summary">
-        <h2 class="project__title">{{ project.name }}</h2>
-        <p class="project__info">{{ project.year }} – {{ project.role }}</p>
-      </div>
+    <div class="project" id="project">
       
+      <div class="project__summary">
+        <p class="project__info">{{ project.year }}</p>
+        <h2 class="project__title">{{ project.name }}</h2>
+        <a class="project__button link" href="{{ project.url }}">{{ project.link-text }}→</a>
+      </div>
+
+      <img class="project__thumb" src="{{ site.baseurl }}img/{{ project.thumbnail }}" srcset="{{ site.baseurl }}img/{{ project.2x-url }}">
+     
     </div>
 
     {% endfor %}

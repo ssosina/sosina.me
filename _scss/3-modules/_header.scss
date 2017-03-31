@@ -1,59 +1,38 @@
 header{
-	@include outer-container();
-   	font-family: $heading2;
-  	margin-top: 60px;
-    //border: 1px solid black;
-}
-
-.header__container{
-	width: 80%;
-	height: 70px;
-	margin: 0 auto;
-	//border: 1px solid black;
-}
-
-.header__logo{
-	@include span-columns(6);
-	color: black;
-	margin-bottom: 30px;
-	font-weight: $bold;
-}
-
-.header__nav{
-	display: none
+	font-family: $heading2;
+	display: none;
 }
 
 /**** Tablet *****/
 
-@include media($tablet){
-	header{
-	height: 90px;
-	}
+@include media($desktop){
 
-	.header__container{
-		@include span-columns(10);
-		@include shift(1);
-		height: 25px;
-		//border: 1px solid black;
-	}
+header{
+	display: block;
+	
+}
 
-	.header__logo{
-		@include span-columns(1 of 10);
-	}
+.header__logo{
+	color: blck;
+	margin-bottom: 30px;
+	font-weight: $bold;
+	float: left;
+	position: fixed;
+	margin: 20px;
+}
 
-	.header__nav{
-		@include span-columns(9 of 10);
-		text-align: right;
+	.header__contact{
+		float: right;
+		position: fixed;
+		top: 0;
+		right: 0;
+		font-family: $heading3;
+		font-size: em(14);
+		color: #3BBD71;
+		text-decoration: underline;
+		display: inline-block;
+		margin: 20px;
 
-		li{
-			display: inline-block;
-			margin-right: 10px;
-
-			a{
-				color: black;
-				font-family: $heading2;
-			}
-		}
 	}
 }
 
@@ -61,30 +40,6 @@ header{
 
 @include media ($large-desktop){
 
-	header{
-		//background: yellow;
-		height: auto;
-		margin-bottom: 100px;
-	}
-
-	.header__container{
-		@include span-columns(12);
-		@include shift(0);
-		height: 25px;
-	}
-
-	.header__logo{
-		@include span-columns(1 of 12);
-	}
-
-	.header__nav{
-		@include span-columns(11 of 12);
-		text-align: right;
-
-		li{
-			display: inline-block;
-		}
-	}
 
 }
 

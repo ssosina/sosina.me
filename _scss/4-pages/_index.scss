@@ -6,54 +6,18 @@ body{
 
 .works{
 	margin-bottom: 30px;
-	font-size: em(20);
+	font-size: em(15);
 	width: 80%;
 	margin: 0px auto 30px;
-	font-family: $heading1;
+	font-family: $heading3;
 	text-align: center;
-}
-
-@include media($tablet){
-	#top, #bottom, #left, #right {
-		background: white;
-		position: fixed;
-		z-index: 9999;
-	}
-
-	#left, #right {
-		top: 0; 
-		bottom: 0;
-		width: 30px;
-	}
-
-	#left{ 
-		left: 0; 
-	}
-
-	#right{ 
-		right: 0; 
-	}
-			
-	#top, #bottom {
-		left: 0; 
-		right: 0;
-		height: 30px;
-		}
-
-	#top{ 
-		top: 0;
-	}
-
-	#bottom{ 
-		bottom: 0; 
-	}
+	color: #D0D0D0;
 }
 
 @include media ($tablet){
 
 	.works{
 		@include span-columns(12);
-		text-align: left;
 	}
 }
 

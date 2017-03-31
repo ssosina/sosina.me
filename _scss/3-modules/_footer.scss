@@ -1,7 +1,6 @@
 footer{
-    text-align: left;
-    height: 250px;
-    background: white;
+    text-align: center;
+    height: 200px;
 	display: flex;
     align-items: flex-start;
 }
@@ -10,7 +9,6 @@ footer{
     width: 80%;
 	margin: 0 auto;
 	align-self: center;
-	//border: 1px solid black;
 }
 
 .footer__content{
@@ -26,114 +24,28 @@ footer{
    		margin-left: 10px;
 
    		a{
-   			color: black;
+   			color: #222222;
    			font-size: em(20);
+   			transition: color 0.25s ease-in-out;
+
+   				&:hover{
+		color: #3BBD71;
+	}
    		}
 	}
 }
 
-.footer__copyright{
-		text-align: left;
-		font-family: $heading3;
-		font-size: em(13);
-		letter-spacing: 0.13em;
-		margin: 30px 0px;
-	a{
-		color: grey;
-	}
-}
-
 .footer__version{
-		text-align: left;
-		font-family: $heading3;
-		font-size: em(11);
-		text-transform: uppercase;
-		letter-spacing: 0.13em;
-		margin: 0px;
+	font-family: $heading3;
+	font-size: em(12);
+	text-transform: uppercase;
+	letter-spacing: 0.13em;
 }
 
-	.footer__social{
-	
-	text-align: left;
+.footer__social{
 	margin-top: 0px;
-		
-		li:first-child{
-			margin-left: 0px;
-		}
-
+	
+	li:first-child{
+		margin-left: 0px;
 	}
-
-@include media ($tablet){
-
-	footer{
-		height: 110px;
-	}
-
-	.footer__container{
-		@include span-columns(10);
-		@include shift(1);
-	}
-
-	.footer__version{
-		@include span-columns(3 of 10);
-
-	}
-
-	.footer__copyright{
-		@include span-columns(4 of 10);
-		text-align: center;
-		font-family: $heading3;
-		font-size: em(13);
-		letter-spacing: 0.13em;
-		margin: 0px;
-	}
-
-	.footer__social{
-		@include span-columns(3 of 10);
-		text-align: right;	
-	}
-
-}
-
-@include media ($desktop){
-	footer{
-	    border-left: 10px solid white;
-		border-right: 10px solid white;
-		border-bottom: 10px solid white;
-	}
-
-	.footer__container{
-		height: 20px;
-	}
-}
-
-@include media ($large-desktop){
-
-	footer{
-		height: 110px;
-		//background: blue;
-		
-	}
-
-	.footer__container{
-		@include span-columns(12);
-		@include shift(0);
-	}
-
-	.footer__version{
-		@include span-columns(3 of 12);
-		text-align: left;
-	}
-
-	.footer__copyright{
-		@include span-columns(6 of 12);
-		text-align: center;
-		
-	}
-
-	.footer__social{
-		@include span-columns(3 of 12);
-		text-align: right;
-	}
-
 }

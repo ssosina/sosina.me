@@ -1,9 +1,7 @@
 projects: 
-- {name: Lateef Saka,        url: 'http://lateefsaka.com', thumbnail: '../img/lateefsaka-thumb.png'      ,year: 2017, role: UI – Web-Development}
-- {name: SWNS Reporter,         url: 'http://matdisalvo.com', thumbnail: '../img/mdisalvo-thumb.png'      ,year: 2017, role: UI – Web-Development }
-- {name: Xinet Documentation,   url: 'http://docs.xinet.com', thumbnail: '../img/xinet-thumb.png'           ,year: 2016, role: UI – Web-Development}
-- {name: Northplains,           url: '',                      thumbnail: '../img/nps-thumb.png'             ,year: 2015, role: Email design & development – Marketing Design}
-- {name: Mileanthony UK,        url: 'http://milesanthony.uk',       thumbnail: '../img/milesanthonyuk-thumb.png'  ,year: 2016, role: Landing page design & Development}
+- {name: Lateef Saka,   url: 'http://lateefsaka.com', link-text: visit live website, thumbnail: 'lateefsaka-thumb.png', 2x-url: 'lateefsaka-thumb@2x.png 2x'  ,year: 2017, role: UI – Web-Development}
+- {name: SWNS Reporter, url: 'http://matdisalvo.com', link-text: visit live website, thumbnail: 'mdisalvo-thumb.png', 2x-url: 'mdisalvo-thumb@2x.png 2x'      ,year: 2017, role: UI – Web-Development }
+- {name: Northplains,   url: 'mailto:samsosina@gmail.com?subject=Northplains: Project Access', link-text: request access, thumbnail: 'nps-thumb.png', 2x-url: 'nps-thumb@2x.png 2x' ,year: 2016, role: UI – Web-Development}
 
 social-links:
 - {name: 'fa fa-dribbble', link: 'https://dribbble.com/samsosina/'}

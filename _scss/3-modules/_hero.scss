@@ -1,8 +1,7 @@
 .hero{
 	width: 100%;
-	text-align: left;
-    background: #061A40;
-    height: 60vh;
+	text-align: center;
+    height: 70vh;
     display: flex;
     align-items: flex-start;
 }
@@ -25,32 +24,47 @@
 }
 
 .hero__summary{
-	color: white;
-	font-weight: $thin;
-	font-family: $heading3;
-	font-size: 16px;
-	line-height: 26px;
+	color: #222222;
+	font-weight: $regular;
+	font-family: $heading2;
+	font-size: em(20);
+	line-height: 30px;
+	margin-bottom: 20px;
+}
 
-	a{
-		color: white;
-		font-family: $heading3;
+.hero__button{
+	text-decoration: underline;
+	color: #222222;
+	transition: color 0.25s ease-in-out;
+
+	&:hover{
+		color: #3BBD71;
+	}
+
+}
+
+@include media ($tablet){
+	.hero{
+	    height: 45vh;
 	}
 }
 
 @include media ($desktop){
 
 	.hero{
-		height: 40vh;
-		border: 10px solid white;
-		padding: 0px;
+	    height: 500px;
+	    padding: 0px;
+	    margin-bottom: 50px;
 	}
 
 	.hero__container{
 		@include outer-container;
+		 align-self: flex-end;
 	}
 
 	.hero__content{
 		@include span-columns(8 of 12);
+		@include shift(2);
 	}
 
 	.hero__title{
@@ -59,18 +73,10 @@
 	}
 
 	.hero__summary{
-		font-weight: $thin;
-		font-size: em(18);
-		line-height: 35px;
-	}
-
-}
-
-@include media ($large-desktop){
-
-		.hero{
-			border: 10px solid white;
-			padding: 0px;
+		font-weight: $regular;
+		font-size: em(28);
+		line-height: 40px;
+		text-align: center;
 	}
 }
 

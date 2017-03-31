@@ -1,17 +1,19 @@
-      <!-- Footer starts here -->
-      <footer>
-        <div class="footer__container">
-          <div class="footer__content">
-            <p class="footer__version">Version 1.1.1</p>
+<!-- Footer starts here -->
+<footer>
+  <div class="footer__container">
+    <div class="footer__content">
+      <div class="row">
+        <p class="footer__version">Version 1.1.1</p>
+      </div>
 
-            <p class="footer__copyright">Available for projects – <a href="mailto:samsosina@gmail.com">samsosina@gmail.com</a></p>
-
-            <ul class="footer__social">
-            {% for social-link in site.data.settings.social-links %}
-              <li><a href="{{ social-link.link }}" target="_blank"><i class="{{ social-link.name }}" aria-hidden="true"></i></a></li>
-             {% endfor %}
-            </ul>
-          </div>
-        </div>
-      </footer>
-       <!-- Footer ends here -->
+      <div class="row">
+        <ul class="footer__social">
+        {% for social-link in site.data.settings.social-links %}
+          <li><a href="{{ social-link.link }}" target="_blank"><i class="{{ social-link.name }}" aria-hidden="true"></i></a></li>
+         {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+ <!-- Footer ends here -->

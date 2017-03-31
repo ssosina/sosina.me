@@ -3,8 +3,8 @@
 //fonts 
 $heading1: 	"Merriweather",serif;
 $heading2: 	"adelle-sans",serif;
-$heading3:  "Menlo", serif;
-$caption:   "Menlo", serif;
+$heading3:  "Menlo",courier, serif;
+$caption:   "Menlo",courier, serif;
 
 
 //font-weights
@@ -22,10 +22,8 @@ $ash-grey: 		  #B3B3B3;
 
 a{
 	text-decoration: none;
-	//color: white;
+}
 
-	&:hover{
-		//opacity: .6;
-		//transition: opacity 0.2s ease-in-out;
-	}
+.row{
+	@include row();
 }
