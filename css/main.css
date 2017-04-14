@@ -99,8 +99,8 @@ a {
   /** An element that fades in and slides from the right */
   /** Reverse "exit" animations */ }
   .m-scene .scene_element {
-    -webkit-animation-duration: 0.25s;
-            animation-duration: 0.25s;
+    -webkit-animation-duration: 0.50s;
+            animation-duration: 0.50s;
     transition-timing-function: ease-in;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both; }
@@ -168,15 +168,16 @@ header {
 
 /**** large desktop  *****/
 footer {
-  text-align: center;
+  text-align: left;
   height: 200px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
-      align-items: flex-start; }
+      align-items: flex-start;
+  padding: 20px 50px 20px 50px; }
 
 .footer__container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   -ms-flex-item-align: center;
       align-self: center; }
@@ -216,16 +217,15 @@ footer {
 
 .hero {
   width: 100%;
-  text-align: center;
-  height: 70vh;
+  text-align: left;
+  height: 40vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
-      align-items: flex-start; }
+      align-items: flex-start;
+  padding: 20px 50px 20px 50px; }
 
 .hero__container {
-  width: 80%;
-  margin: 0 auto;
   -ms-flex-item-align: center;
       align-self: center; }
 
@@ -255,19 +255,19 @@ footer {
 
 @media screen and (min-width: 48em) {
   .hero {
-    height: 45vh; } }
+    height: 45vh; }
+  .hero__summary {
+    font-weight: 400;
+    font-size: 1.875em;
+    line-height: 40px; } }
 
 @media screen and (min-width: 60em) {
   .hero {
-    height: 500px;
-    padding: 0px;
-    margin-bottom: 50px; }
+    height: 370px; }
   .hero__container {
     max-width: 1270px;
     margin-left: auto;
-    margin-right: auto;
-    -ms-flex-item-align: end;
-        align-self: flex-end; }
+    margin-right: auto; }
     .hero__container::after {
       clear: both;
       content: "";
@@ -276,22 +276,13 @@ footer {
     float: left;
     display: block;
     margin-right: 3.07329%;
-    width: 65.64224%;
-    margin-left: 17.17888%; }
+    width: 74.23168%; }
     .hero__content:last-child {
-      margin-right: 0; }
-  .hero__title {
-    font-size: 2.1875em;
-    line-height: 10px; }
-  .hero__summary {
-    font-weight: 400;
-    font-size: 1.75em;
-    line-height: 40px;
-    text-align: center; } }
+      margin-right: 0; } }
 
 .main {
   width: 100%;
-  padding-top: 50px; }
+  padding: 20px 50px 20px 50px; }
 
 .main__container {
   max-width: 1270px;
@@ -304,7 +295,6 @@ footer {
 
 .project {
   display: block;
-  width: 80%;
   height: 270px;
   overflow: hidden;
   margin: 0 auto;
@@ -313,25 +303,24 @@ footer {
   position: relative;
   text-align: center;
   background: white;
-  border: 1px solid #EDEDED;
-  box-shadow: 1px 2px 5px 0 rgba(209, 209, 209, 0.1);
   transition: box-shadow 0.25s ease-in-out;
-  padding-top: 40px; }
+  padding-top: 40px;
+  box-shadow: 0 5px 20px -5px rgba(150, 150, 150, 0.12), 0 3px 4px -2px rgba(0, 0, 0, 0.08); }
   .project a {
     display: inline-block; }
   .project img {
     max-width: 85%;
-    top: 60px;
+    top: 70px;
     position: relative;
     border-radius: 2px;
     transition: all 0.25s ease-in-out; }
 
 .project:hover, #project:hover {
-  box-shadow: 0 0 55px 0 rgba(217, 217, 217, 0.47); }
+  box-shadow: 0 30px 75px -15px rgba(150, 150, 150, 0.3), 0 25px 40px -20px rgba(0, 0, 0, 0.1); }
   .project:hover .project__button, #project:hover .project__button {
     color: #3BBD71; }
   .project:hover img, #project:hover img {
-    top: 20px; }
+    top: 35px; }
 
 .project__summary {
   text-align: center; }
@@ -368,7 +357,7 @@ footer {
     .main__projects:last-child {
       margin-right: 0; }
   .main__container {
-    max-width: 90%;
+    max-width: 1270px;
     margin-left: auto;
     margin-right: auto; }
     .main__container::after {
@@ -389,13 +378,8 @@ footer {
       clear: left; } }
 
 @media screen and (min-width: 60em) {
-  .main {
-    border-left: 10px solid white;
-    border-right: 10px solid white;
-    border-bottom: 10px solid white;
-    padding-top: 50px; }
   .main__container {
-    max-width: 90%;
+    max-width: 1270px;
     margin-left: auto;
     margin-right: auto; }
     .main__container::after {
@@ -461,18 +445,24 @@ nav {
     margin-left: 10px; }
 
 body {
-  background-color: white;
+  background-color: #FDFDFD;
   color: black;
   margin: 0px; }
 
 .works {
   margin-bottom: 30px;
   font-size: 0.9375em;
-  width: 80%;
+  width: 100%;
   margin: 0px auto 30px;
   font-family: "Menlo", courier, serif;
-  text-align: center;
+  text-align: left;
   color: #D0D0D0; }
+
+.contact {
+  font-size: 1.25em; }
+  .contact a {
+    color: #222222;
+    text-decoration: underline; }
 
 @media screen and (min-width: 48em) {
   .works {

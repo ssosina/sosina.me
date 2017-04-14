@@ -1,5 +1,5 @@
 body{
-	background-color: white;
+	background-color: #FDFDFD;
 	color: black;
 	margin: 0px;
 }
@@ -7,11 +7,20 @@ body{
 .works{
 	margin-bottom: 30px;
 	font-size: em(15);
-	width: 80%;
+	width: 100%;
 	margin: 0px auto 30px;
 	font-family: $heading3;
-	text-align: center;
+	text-align: left;
 	color: #D0D0D0;
+}
+
+.contact{
+	font-size: em(20);
+
+	a{
+		color: #222222;
+		text-decoration: underline;
+	}
 }
 
 @include media ($tablet){

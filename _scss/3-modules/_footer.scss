@@ -1,12 +1,13 @@
 footer{
-    text-align: center;
+    text-align: left;
     height: 200px;
 	display: flex;
     align-items: flex-start;
+    @include pad(20px 50px 20px 50px);
 }
 
 .footer__container{
-    width: 80%;
+    width: 100%;
 	margin: 0 auto;
 	align-self: center;
 }
