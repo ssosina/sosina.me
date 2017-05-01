@@ -1,10 +1,16 @@
-@charset "UTF-8";
+/* Change grid settings */
+/* Breakpoints */
+/* Omega Reset */
 html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/* Fonts */
+/* Font-weights */
+/* Colors */
+/* Globals */
 a {
   text-decoration: none; }
 
@@ -120,53 +126,70 @@ a {
     -webkit-animation-direction: alternate-reverse;
             animation-direction: alternate-reverse; }
 
-h1 {
-  font-family: "Merriweather", serif;
+h1, h2, h3, h4, h5 {
+  font-family: "aktiv-grotesk", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-style: normal; }
+
+h1 {
+  font-size: 3.4375em;
+  font-weight: 500; }
 
 h2 {
-  font-family: "Merriweather", serif;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal; }
+  font-size: 2.5em;
+  line-height: 52px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px; }
+
+h3 {
+  font-size: 1.875em; }
 
 h4 {
-  font-family: "Merriweather", serif;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-size: 1.25em; }
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 0.875em; }
 
 p {
-  font-family: "adelle-sans", serif; }
+  font-family: "aktiv-grotesk", sans-serif; }
 
-header {
-  font-family: "adelle-sans", serif;
+.header__logo {
   display: none; }
 
-/**** Tablet *****/
-@media screen and (min-width: 60em) {
-  header {
-    display: block; }
+.header__contact {
+  display: none; }
+
+/* Tablet */
+@media screen and (min-width: 48em) {
   .header__logo {
     color: blck;
     margin-bottom: 30px;
     font-weight: 700;
     float: left;
-    position: fixed;
-    margin: 20px; }
+    position: absolute;
+    margin: 20px;
+    z-index: 10;
+    display: inline-block; }
   .header__contact {
     float: right;
     position: fixed;
     top: 0;
     right: 0;
-    font-family: "Menlo", courier, serif;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 500;
     font-size: 0.875em;
-    color: #3BBD71;
+    color: #68B0AB;
     text-decoration: underline;
     display: inline-block;
-    margin: 20px; } }
+    margin: 20px;
+    z-index: 10; } }
 
-/**** large desktop  *****/
+/* large desktop  */
+@media screen and (min-width: 60em) {
+  .header__logo {
+    position: fixed; } }
+
 footer {
   text-align: left;
   height: 200px;
@@ -202,7 +225,7 @@ footer {
       font-size: 1.25em;
       transition: color 0.25s ease-in-out; }
       .footer__social li a:hover {
-        color: #3BBD71; }
+        color: #68B0AB; }
 
 .footer__version {
   font-family: "Menlo", courier, serif;
@@ -217,50 +240,58 @@ footer {
 
 .hero {
   width: 100%;
+<<<<<<< HEAD
   text-align: left;
   height: 40vh;
+=======
+  height: 55vh;
+  text-align: left;
+>>>>>>> gh-pages
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
       align-items: flex-start;
   padding: 20px 50px 20px 50px; }
+<<<<<<< HEAD
+=======
+
+.highlight {
+  color: #68B0AB; }
+>>>>>>> gh-pages
 
 .hero__container {
   -ms-flex-item-align: center;
       align-self: center; }
 
-.hero__email-link {
-  text-decoration: underline; }
-
-.hero__title {
-  font-weight: 400;
-  font-size: 1.625em;
-  line-height: 10px;
-  color: white; }
-
 .hero__summary {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.3;
   color: #222222;
-  font-weight: 400;
-  font-family: "adelle-sans", serif;
-  font-size: 1.25em;
-  line-height: 30px;
   margin-bottom: 20px; }
 
-.hero__button {
-  text-decoration: underline;
-  color: #222222;
-  transition: color 0.25s ease-in-out; }
-  .hero__button:hover {
-    color: #3BBD71; }
-
-@media screen and (min-width: 48em) {
+/* Mobile */
+@media screen and (min-width: 25em) {
   .hero {
+<<<<<<< HEAD
     height: 45vh; }
   .hero__summary {
     font-weight: 400;
     font-size: 1.875em;
     line-height: 40px; } }
+=======
+    text-align: center; }
+  .hero__summary {
+    font-size: 1.875em; } }
+>>>>>>> gh-pages
 
+/* Tablet */
+@media screen and (min-width: 25em) {
+  .hero__summary {
+    font-weight: 500; } }
+
+/* Desktop */
 @media screen and (min-width: 60em) {
   .hero {
     height: 370px; }
@@ -276,7 +307,12 @@ footer {
     float: left;
     display: block;
     margin-right: 3.07329%;
+<<<<<<< HEAD
     width: 74.23168%; }
+=======
+    width: 82.82112%;
+    margin-left: 8.58944%; }
+>>>>>>> gh-pages
     .hero__content:last-child {
       margin-right: 0; } }
 
@@ -318,7 +354,7 @@ footer {
 .project:hover, #project:hover {
   box-shadow: 0 30px 75px -15px rgba(150, 150, 150, 0.3), 0 25px 40px -20px rgba(0, 0, 0, 0.1); }
   .project:hover .project__button, #project:hover .project__button {
-    color: #3BBD71; }
+    color: #68B0AB; }
   .project:hover img, #project:hover img {
     top: 35px; }
 
@@ -326,7 +362,7 @@ footer {
   text-align: center; }
 
 .project__button {
-  font-family: "adelle-sans", serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-size: 0.875em;
   color: #222222;
   text-decoration: underline;
@@ -339,13 +375,12 @@ footer {
 
 .project__title {
   font-weight: 400;
-  margin: 2px 0px;
-  font-family: "adelle-sans", serif;
-  font-size: 1.25em; }
+  margin: 2px 0px; }
   .project__title span {
     font-weight: 100;
     font-size: 16px; }
 
+/* Tablet */
 @media screen and (min-width: 48em) {
   .main {
     padding-top: 0px; }
@@ -377,6 +412,7 @@ footer {
     .project:nth-child(2n+1) {
       clear: left; } }
 
+/* Desktop */
 @media screen and (min-width: 60em) {
   .main__container {
     max-width: 1270px;
@@ -430,23 +466,12 @@ nav {
     float: right;
     padding-left: 10px; }
 
-.button {
-  background: #2E2C2C;
-  text-transform: uppercase;
-  color: white;
-  padding: 15px 13px;
-  font-size: 0.8125em;
-  font-weight: bold;
-  display: inline-block;
-  margin: 20px 0px;
-  letter-spacing: 0.07076923077em; }
-  .button:after {
-    content: "→";
-    margin-left: 10px; }
-
 body {
   background-color: #FDFDFD;
+<<<<<<< HEAD
   color: black;
+=======
+>>>>>>> gh-pages
   margin: 0px; }
 
 .works {
@@ -459,11 +484,21 @@ body {
   color: #D0D0D0; }
 
 .contact {
+<<<<<<< HEAD
   font-size: 1.25em; }
   .contact a {
     color: #222222;
     text-decoration: underline; }
 
+=======
+  text-align: center;
+  font-size: 1.25em; }
+  .contact a {
+    color: #68B0AB;
+    text-decoration: underline; }
+
+/* Tablet */
+>>>>>>> gh-pages
 @media screen and (min-width: 48em) {
   .works {
     float: left;
@@ -472,65 +507,3 @@ body {
     width: 100%; }
     .works:last-child {
       margin-right: 0; } }
-
-.about__container {
-  width: 85%;
-  margin: 0 auto;
-  position: relative; }
-
-.about__image {
-  display: none; }
-
-/* Tablet Syling */
-@media screen and (min-width: 48em) {
-  .about__container {
-    float: left;
-    display: block;
-    margin-right: 3.07329%;
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    height: 85vh;
-    -ms-flex-align: start;
-        align-items: flex-start; }
-    .about__container:last-child {
-      margin-right: 0; }
-    .about__container:after {
-      position: absolute;
-      top: -170px;
-      background: #F3F3F3;
-      width: 382px;
-      height: 485px;
-      content: '';
-      left: 190px;
-      z-index: -999; }
-  .about__image {
-    float: left;
-    display: block;
-    margin-right: 3.07329%;
-    width: 14.10559%;
-    margin-left: 8.58944%; }
-    .about__image:last-child {
-      margin-right: 0; }
-  .main__content {
-    float: left;
-    display: block;
-    margin-right: 3.07329%;
-    width: 48.46336%;
-    margin-left: 8.58944%;
-    -ms-flex-item-align: center;
-        align-self: center; }
-    .main__content:last-child {
-      margin-right: 0; }
-    .main__content p {
-      font-size: 1.25em;
-      line-height: 30px; }
-    .main__content .main__content__title {
-      font-size: 38px; }
-    .main__content .main__content__summary {
-      font-weight: 100;
-      font-size: 38px;
-      line-height: 50px;
-      color: #B3B3B3; } }
-
-/* Desktop Styling */

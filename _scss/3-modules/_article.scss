@@ -38,7 +38,7 @@
 	&:hover{
 		    box-shadow: 0 30px 75px -15px rgba(150,150,150,.3), 0 25px 40px -20px rgba(0,0,0,.1);
 
-		.project__button{color: #3BBD71;}
+		.project__button{color: $mint;}
 
 		img{top: 35px;}
 	}
@@ -49,7 +49,7 @@
 }
 
 .project__button{
-	font-family: $heading2;
+	font-family: $heading-ff;
 	font-size: em(14);
 	color: #222222;
 	text-decoration: underline;
@@ -64,15 +64,16 @@
 
 .project__title{
 	font-weight: 400;
+	
 	margin: 2px 0px;
-	font-family: $heading2;
-	font-size: em(20);
 
 	span{
 		font-weight: 100;
     	font-size: 16px;
 	}
 }
+
+/* Tablet */
 
 @include media ($tablet){
 
@@ -95,6 +96,8 @@
 	}
 }
 
+
+/* Desktop */
 
 @include media ($desktop){
 

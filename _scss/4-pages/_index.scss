@@ -1,6 +1,9 @@
 body{
 	background-color: #FDFDFD;
+<<<<<<< HEAD
 	color: black;
+=======
+>>>>>>> gh-pages
 	margin: 0px;
 }
 
@@ -15,6 +18,7 @@ body{
 }
 
 .contact{
+<<<<<<< HEAD
 	font-size: em(20);
 
 	a{
@@ -24,9 +28,22 @@ body{
 }
 
 @include media ($tablet){
+=======
+	text-align: center;
+	font-size: em(20);
+>>>>>>> gh-pages
 
-	.works{
-		@include span-columns(12);
+	a{
+		color: $mint;
+		text-decoration: underline;
 	}
+}
+
+
+/* Tablet */
+
+@include media ($tablet){
+
+	.works{@include span-columns(12);}
 }
 

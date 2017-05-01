@@ -8,7 +8,7 @@
 	display: none;
 }
 
-/* Tablet Syling */
+/* Tablet */
 
 @include media($tablet){
 
@@ -17,7 +17,7 @@
 		display: flex;
     	height: 85vh;
     	align-items: flex-start;
-    	//border: 1px solid black;
+    
 
 	&:after{
 	    position: absolute;
@@ -34,14 +34,13 @@
 	.about__image{
 		@include span-columns(2 of 12);
 		@include shift(1);
-		//margin-top: 140px;
+
 	}
 
 	.main__content{
 		@include span-columns(6 of 12);
 		@include shift(1);
 		align-self: center;
-		//border: 1px solid black;
 
 		p{
 			font-size: em(20);
@@ -56,9 +55,9 @@
 			font-weight: 100;
 	    	font-size: 38px;
 	    	line-height: 50px;
-	    	color: $ash-grey;
+
 		}
 	}
 }
 
-/* Desktop Styling */
+/* Desktop */

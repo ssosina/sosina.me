@@ -10,7 +10,11 @@ if(currentHour < 12){
 }else if(currentHour < 18){
  greetingText = "Good afternoon friend!"
 }else{
+<<<<<<< HEAD
 	greetingText = "Good evening sleepyhead,"
+=======
+  greetingText = "Good evening sleepyhead,"
+>>>>>>> gh-pages
 }
 
 jQuery("#greeting").text(greetingText);

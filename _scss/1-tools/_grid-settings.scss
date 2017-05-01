@@ -4,25 +4,25 @@ $visual-grid: false !global;
 $visual-grid-color: #d5eefb !global;
 $visual-grid-index: front !global;
 
-//Change grid settings
+/* Change grid settings */
 $column:              em(70);
 $grid-columns:        6;
 $gutter:              em(39);
 $max-width:           1270px;
 
-$mq-s :  em(400);
-$mq-m :  em(768);
-$mq-m-max :  em(859);
-$mq-l :  em(960);
-$mq-xl:  em(1700);
+$mq-s :       em(400);
+$mq-m :       em(768);
+$mq-m-max :   em(859);
+$mq-l :       em(960);
+$mq-xl:       em(1700);
 
-// Breakpoints
+/* Breakpoints */
 $mobile:    		new-breakpoint(min-width $mq-s 6);
 $tablet:   			new-breakpoint(min-width $mq-m 12);
 $desktop:  			new-breakpoint(min-width $mq-l 12);
 $large-desktop:		new-breakpoint(min-width $mq-xl 12);
 
-// Omega Reset
+/* Omega Reset */
 
 @mixin omega-reset($nth) {
   &:nth-child(#{$nth}) { margin-right: flex-gutter($grid-columns, $gutter); }

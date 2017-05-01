@@ -1,29 +1,26 @@
 // Variables - this is where all variables for this proeject are stored 
 
-//fonts 
-$heading1: 	"Merriweather",serif;
-$heading2: 	"adelle-sans",serif;
-$heading3:  "Menlo",courier, serif;
-$caption:   "Menlo",courier, serif;
+/* Fonts */ 
 
+$heading-ff    :  "aktiv-grotesk",sans-serif;
+$paragraph-ff  :  "aktiv-grotesk",sans-serif;
+$heading3	   :  "Menlo",courier, serif;
+$caption       :  "Menlo",courier, serif;
 
-//font-weights
+/* Font-weights */
+
 $thin:     100;
 $light:	   300;
 $regular:  400;
 $medium:   500;
 $bold:     700;
 
-//colors
-$primary-color:   #34495E;
-$secondary-color: #58E2C2;
-$meta-color:      #ACACAC; 
-$ash-grey: 		  #B3B3B3;
+/* Colors */
 
-a{
-	text-decoration: none;
-}
+$rich-black:      #222222;
+$mint:  		  #68B0AB;
 
-.row{
-	@include row();
-}
+/* Globals */
+
+a{text-decoration: none;}
+.row{@include row();}
