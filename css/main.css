@@ -191,7 +191,7 @@ p {
     position: fixed; } }
 
 footer {
-  text-align: left;
+  text-align: center;
   height: 200px;
   display: -ms-flexbox;
   display: flex;
@@ -240,24 +240,16 @@ footer {
 
 .hero {
   width: 100%;
-<<<<<<< HEAD
-  text-align: left;
-  height: 40vh;
-=======
   height: 55vh;
   text-align: left;
->>>>>>> gh-pages
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
       align-items: flex-start;
   padding: 20px 50px 20px 50px; }
-<<<<<<< HEAD
-=======
 
 .highlight {
   color: #68B0AB; }
->>>>>>> gh-pages
 
 .hero__container {
   -ms-flex-item-align: center;
@@ -274,17 +266,9 @@ footer {
 /* Mobile */
 @media screen and (min-width: 25em) {
   .hero {
-<<<<<<< HEAD
-    height: 45vh; }
-  .hero__summary {
-    font-weight: 400;
-    font-size: 1.875em;
-    line-height: 40px; } }
-=======
     text-align: center; }
   .hero__summary {
     font-size: 1.875em; } }
->>>>>>> gh-pages
 
 /* Tablet */
 @media screen and (min-width: 25em) {
@@ -307,12 +291,8 @@ footer {
     float: left;
     display: block;
     margin-right: 3.07329%;
-<<<<<<< HEAD
-    width: 74.23168%; }
-=======
     width: 82.82112%;
     margin-left: 8.58944%; }
->>>>>>> gh-pages
     .hero__content:last-child {
       margin-right: 0; } }
 
@@ -468,10 +448,6 @@ nav {
 
 body {
   background-color: #FDFDFD;
-<<<<<<< HEAD
-  color: black;
-=======
->>>>>>> gh-pages
   margin: 0px; }
 
 .works {
@@ -480,17 +456,10 @@ body {
   width: 100%;
   margin: 0px auto 30px;
   font-family: "Menlo", courier, serif;
-  text-align: left;
+  text-align: center;
   color: #D0D0D0; }
 
 .contact {
-<<<<<<< HEAD
-  font-size: 1.25em; }
-  .contact a {
-    color: #222222;
-    text-decoration: underline; }
-
-=======
   text-align: center;
   font-size: 1.25em; }
   .contact a {
@@ -498,7 +467,6 @@ body {
     text-decoration: underline; }
 
 /* Tablet */
->>>>>>> gh-pages
 @media screen and (min-width: 48em) {
   .works {
     float: left;

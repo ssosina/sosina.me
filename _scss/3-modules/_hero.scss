@@ -1,24 +1,14 @@
 .hero{
 	width: 100%;
-<<<<<<< HEAD
-	text-align: left;
-    height: 40vh;
-=======
 	height: 55vh;
 	text-align: left;
->>>>>>> gh-pages
     display: flex;
     align-items: flex-start;
     @include pad(20px 50px 20px 50px);
 }
 
-<<<<<<< HEAD
-.hero__container{
-    align-self: center;
-=======
 .highlight{
 	color: $mint;
->>>>>>> gh-pages
 }
 
 
@@ -41,13 +31,6 @@
 	.hero{
 	    text-align: center;
 	}
-<<<<<<< HEAD
-}
-
-@include media($tablet){
-	.hero{
-	    height: 45vh;
-=======
 
 	.hero__summary{
 		font-size: $heading3-fs;
@@ -61,14 +44,6 @@
 
 	.hero__summary{
 		font-weight: $medium;
->>>>>>> gh-pages
-	}
-
-
-	.hero__summary{
-		font-weight: $regular;
-		font-size: em(30);
-		line-height: 40px;
 	}
 }
 
@@ -79,11 +54,7 @@
 
 	.hero{
 	    height: 370px;
-<<<<<<< HEAD
-	    //margin-bottom: 50px;
-=======
 
->>>>>>> gh-pages
 	}
 
 	.hero__container{
@@ -91,15 +62,8 @@
 	}
 
 	.hero__content{
-<<<<<<< HEAD
-		@include span-columns(9 of 12);
-	}
-
-
-=======
 		@include span-columns(10 of 12);
 		@include shift(1);
 	}
->>>>>>> gh-pages
 }
 
