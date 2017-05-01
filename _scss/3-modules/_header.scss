@@ -1,45 +1,52 @@
-header{
-	font-family: $heading2;
-	display: none;
-}
-
-/**** Tablet *****/
-
-@include media($desktop){
-
-header{
-	display: block;
-	
-}
-
 .header__logo{
-	color: blck;
-	margin-bottom: 30px;
-	font-weight: $bold;
-	float: left;
-	position: fixed;
-	margin: 20px;
-}
+		display: none;
+	}
+
+	.header__contact{
+
+		display: none;
+	}
+
+
+/* Tablet */
+
+@include media($tablet){
+
+	.header__logo{
+		color: blck;
+		margin-bottom: 30px;
+		font-weight: $bold;
+		float: left;
+		position: absolute;
+		margin: 20px;
+		z-index:10;
+		display: inline-block;
+	}
 
 	.header__contact{
 		float: right;
 		position: fixed;
 		top: 0;
 		right: 0;
-		font-family: $heading3;
-		font-size: em(14);
-		color: #3BBD71;
+		font-family: $paragraph-ff;
+		font-weight: $medium;
+		font-size: $caption-fs;
+		color: $mint;
 		text-decoration: underline;
 		display: inline-block;
 		margin: 20px;
-
+		z-index:10;
 	}
+
 }
 
-/**** large desktop  *****/
+/* large desktop  */
 
-@include media ($large-desktop){
+@include media ($desktop){
 
+	.header__logo{
+		position: fixed;
+	}
 
 }
 

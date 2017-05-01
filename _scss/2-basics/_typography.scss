@@ -1,22 +1,46 @@
-h1{
-	font-family: $heading1;
+$heading1-fs: em(55);
+$heading2-fs: em(40);
+$heading3-fs: em(30);
+$heading4-fs: em(24);
+$heading5-fs: em(14);
+
+$caption-fs: em(14);
+$body-fs: em(17);
+
+h1,h2,h3,h4,h5{
+	font-family: $heading-ff;
 	-webkit-font-smoothing: antialiased;
 	font-style: normal;
+}
+
+h1{
+	font-size: $heading1-fs;
+	font-weight: $medium;
 }
 
 h2{
-	font-family: $heading1;
-	-webkit-font-smoothing: antialiased;
-	font-style: normal;
+	font-size: $heading2-fs;
+	line-height: 52px;
+	font-weight: $medium;
+
+	font-size: 24px;
+    line-height: 30px;
+}
+
+h3{
+	font-size: $heading3-fs;
 }
 
 h4{
-	font-family: $heading1;
-	-webkit-font-smoothing: antialiased;
-	font-style: normal;
-	font-size: em(20);
+	font-size: $heading4-fs;
+}
+
+h5{
+	font-size: $heading5-fs;
 }
 
 p{
-	font-family: $heading2;
+	font-family: $paragraph-ff;
 }
+
+

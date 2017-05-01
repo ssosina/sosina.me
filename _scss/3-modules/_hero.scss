@@ -1,64 +1,60 @@
 .hero{
 	width: 100%;
+	height: 55vh;
 	text-align: left;
-    height: 40vh;
     display: flex;
     align-items: flex-start;
     @include pad(20px 50px 20px 50px);
 }
 
+.highlight{
+	color: $mint;
+}
+
+
 .hero__container{
     align-self: center;
 }
 
-.hero__email-link{
-	text-decoration: underline;
-}
-
-.hero__title{
-	font-weight: $regular;
-	font-size: em(26);
-	line-height: 10px;
-	color: white;
-}
-
 .hero__summary{
+	font-family: $heading-ff;
+	font-weight: $bold;
+	font-size: $heading4-fs;
+	line-height: 1.3;
 	color: #222222;
-	font-weight: $regular;
-	font-family: $heading2;
-	font-size: em(20);
-	line-height: 30px;
 	margin-bottom: 20px;
 }
 
-.hero__button{
-	text-decoration: underline;
-	color: #222222;
-	transition: color 0.25s ease-in-out;
+/* Mobile */
 
-	&:hover{
-		color: #3BBD71;
-	}
-}
-
-@include media($tablet){
+@include media($mobile){
 	.hero{
-	    height: 45vh;
+	    text-align: center;
 	}
-
 
 	.hero__summary{
-		font-weight: $regular;
-		font-size: em(30);
-		line-height: 40px;
+		font-size: $heading3-fs;
 	}
 }
+
+
+/* Tablet */
+
+@include media($mobile){
+
+	.hero__summary{
+		font-weight: $medium;
+	}
+}
+
+
+/* Desktop */
 
 @include media ($desktop){
 
 	.hero{
 	    height: 370px;
-	    //margin-bottom: 50px;
+
 	}
 
 	.hero__container{
@@ -66,9 +62,8 @@
 	}
 
 	.hero__content{
-		@include span-columns(9 of 12);
+		@include span-columns(10 of 12);
+		@include shift(1);
 	}
-
-
 }
 

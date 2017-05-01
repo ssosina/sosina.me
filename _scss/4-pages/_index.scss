@@ -1,6 +1,5 @@
 body{
 	background-color: #FDFDFD;
-	color: black;
 	margin: 0px;
 }
 
@@ -10,23 +9,25 @@ body{
 	width: 100%;
 	margin: 0px auto 30px;
 	font-family: $heading3;
-	text-align: left;
+	text-align: center;
 	color: #D0D0D0;
 }
 
 .contact{
+	text-align: center;
 	font-size: em(20);
 
 	a{
-		color: #222222;
+		color: $mint;
 		text-decoration: underline;
 	}
 }
 
+
+/* Tablet */
+
 @include media ($tablet){
 
-	.works{
-		@include span-columns(12);
-	}
+	.works{@include span-columns(12);}
 }
 
