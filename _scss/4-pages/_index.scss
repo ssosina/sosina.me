@@ -12,22 +12,3 @@ body{
 	text-align: center;
 	color: #D0D0D0;
 }
-
-.contact{
-	text-align: center;
-	font-size: em(20);
-
-	a{
-		color: $mint;
-		text-decoration: underline;
-	}
-}
-
-
-/* Tablet */
-
-@include media ($tablet){
-
-	.works{@include span-columns(12);}
-}
-

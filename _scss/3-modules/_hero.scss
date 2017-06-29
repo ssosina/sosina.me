@@ -4,15 +4,10 @@
 	text-align: left;
     display: flex;
     align-items: flex-start;
-    @include pad(20px 50px 20px 50px);
+    @include grid-visual;
 }
 
-.highlight{
-	color: $mint;
-}
-
-
-.hero__container{
+.container{
     align-self: center;
 }
 
@@ -24,46 +19,3 @@
 	color: #222222;
 	margin-bottom: 20px;
 }
-
-/* Mobile */
-
-@include media($mobile){
-	.hero{
-	    text-align: center;
-	}
-
-	.hero__summary{
-		font-size: $heading3-fs;
-	}
-}
-
-
-/* Tablet */
-
-@include media($mobile){
-
-	.hero__summary{
-		font-weight: $medium;
-	}
-}
-
-
-/* Desktop */
-
-@include media ($desktop){
-
-	.hero{
-	    height: 370px;
-
-	}
-
-	.hero__container{
-		@include outer-container;
-	}
-
-	.hero__content{
-		@include span-columns(10 of 12);
-		@include shift(1);
-	}
-}
-

@@ -1,51 +1,22 @@
-.header__logo{
-		display: none;
-	}
-
-	.header__contact{
-		display: none;
-	}
-
-
-/* Tablet */
-
-@include media($tablet){
-
-	.header__logo{
-		color: blck;
-		margin-bottom: 30px;
-		font-weight: $bold;
-		float: left;
-		position: absolute;
-		margin: 20px;
-		z-index:10;
-		display: inline-block;
-	}
-
-	.header__contact{
-		float: right;
-		position: fixed;
-		top: 0;
-		right: 0;
-		font-family: $paragraph-ff;
-		font-weight: $medium;
-		font-size: $caption-fs;
-		color: $mint;
-		text-decoration: underline;
-		display: inline-block;
-		margin: 20px;
-		z-index:10;
-	}
-
+header.global{
+	@include grid-container;
+	height: 70px;
+	border: 1px solid black;
 }
 
-/* large desktop  */
-
-@include media ($desktop){
-
-	.header__logo{
-		position: fixed;
-	}
-
+.logo{
+	@include grid-column(3);
+	border: 1px solid black;
+	text-align: left;
 }
 
+.contact{
+	@include grid-column(3);
+	border: 1px solid black;
+	text-align: right;
+}
+
+.middle{
+	display: flex;
+    align-items: center;
+}

@@ -1,45 +1,10 @@
 ---
+layout: default
 title: Sam Sosina | Design + Code
 ---
 
-<!DOCTYPE html>
-<html lang="en-GB">
-
-  {% include head.html %}
-
-  <body>
-
-  <div class="m-scene" id="main">
-
-  {% include header.html %}
-
-  {% include hero.html %}
+{% include hero.html %}
  
-  {% include projects.html %}
+{% include projects.html %}
 
-  {% include contact.html %}
-
-  {% include footer.html %}
-
-  </div>
- 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://use.fontawesome.com/7ac0553162.js"></script>
-  <script src="{{ site.baseurl }}js/hammer.min.js"></script>
-  <script src="{{ site.baseurl }}js/jquery.smoothState.min.js"></script>
-  <script src="{{ site.baseurl }}js/app.js"></script>
-
-  <script type="text/javascript">
-    
-    var myElement = document.getElementById('project');
-    var hammertime = new Hammer(myElement);
-
-    hammertime.on('tap', function(ev) {
-      console.log(ev);
-    });
-
-  </script>
-
-  </body>
-
-</html> 
+{% include contact.html %}

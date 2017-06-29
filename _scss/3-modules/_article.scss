@@ -1,10 +1,5 @@
 .main{
 	width: 100%;
-	@include pad(20px 50px 20px 50px);
-}
-
-.main__container{
-	@include outer-container();
 }
 
 .project{
@@ -70,60 +65,5 @@
 	span{
 		font-weight: 100;
     	font-size: 16px;
-	}
-}
-
-/* Tablet */
-
-@include media ($tablet){
-
-	.main{
-		padding-top: 0px;	
-	}
-
-	.main__projects{
-		@include span-columns(12);
-	}
-
-	.main__container{
-		@include outer-container();
-	}
-
-	.project{
-		@include span-columns(6 of 12);
-		@include omega(2n);
-		margin-bottom: 50px;
-	}
-}
-
-
-/* Desktop */
-
-@include media ($desktop){
-
-	.main__container{
-		@include outer-container();
-	}
-
-	.project{
-		@include omega-reset(2n);
-	  	@include span-columns(4 of 12);
-	  	@include omega(3n);
-		margin-bottom: 100px;
-	}
-}
-
-@include media ($large-desktop){
-
-	.main__container{
-		@include outer-container();
-	}
-
-	.project{
-		height: 310px;
-
-		img{
-			max-width: 100%;
-		}
 	}
 }

@@ -1,31 +1,25 @@
-@import 'neat/neat-helpers';
+/* Default Grid */
+$neat-grid:( columns: 6, gutter: 10px, );
 
-$visual-grid: false !global;
-$visual-grid-color: #d5eefb !global;
-$visual-grid-index: front !global;
+$mq-m : ( columns: 12, gutter: 20px, media: 768px, );
+$mq-l : ( columns: 12, gutter: 20px, media: 1270px, );
+$mq-xl: ( columns: 12, gutter: 50px, media: 1700px, );
 
-/* Change grid settings */
-$column:              em(70);
-$grid-columns:        6;
-$gutter:              em(39);
-$max-width:           1270px;
 
-$mq-s :       em(400);
-$mq-m :       em(768);
-$mq-m-max :   em(859);
-$mq-l :       em(960);
-$mq-xl:       em(1700);
+.container{
+	@include grid-visual;
+	max-width: 400px;
+	margin: 0 auto;
+	height: 100%; 
 
-/* Breakpoints */
-$mobile:    		new-breakpoint(min-width $mq-s 6);
-$tablet:   			new-breakpoint(min-width $mq-m 12);
-$desktop:  			new-breakpoint(min-width $mq-l 12);
-$large-desktop:		new-breakpoint(min-width $mq-xl 12);
+	@include grid-media($mq-m){
+		@include grid-visual(pink, $mq-m);
+		max-width: 768px;
+	}
 
-/* Omega Reset */
+	@include grid-media($mq-l){
+		@include grid-visual(red, $mq-l);
+		max-width: 1270px;
+	}
 
-@mixin omega-reset($nth) {
-  &:nth-child(#{$nth}) { margin-right: flex-gutter($grid-columns, $gutter); }
-  &:nth-child(#{$nth}+1) { clear: none }
 }
-
