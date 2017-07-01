@@ -1,25 +1,32 @@
 /* Default Grid */
 $neat-grid:( columns: 6, gutter: 10px, );
 
-$mq-m : ( columns: 12, gutter: 20px, media: 768px, );
-$mq-l : ( columns: 12, gutter: 20px, media: 1270px, );
-$mq-xl: ( columns: 12, gutter: 50px, media: 1700px, );
+$mq-s : ( columns: 6,  gutter: 10px, media: 400px, );
+$mq-m : ( columns: 6,  gutter: 20px, media: 768px, );
+$mq-l : ( columns: 12, gutter: 20px, media: 1000px, );
+$mq-xl: ( columns: 12, gutter: 30px, media: 1700px, );
 
 
 .container{
-	@include grid-visual;
-	max-width: 400px;
+	max-width: 21.875em;
 	margin: 0 auto;
 	height: 100%; 
 
-	@include grid-media($mq-m){
-		@include grid-visual(pink, $mq-m);
-		max-width: 768px;
+	@include grid-media($mq-s) {max-width: 85%;}
+	@include grid-media($mq-m) {max-width: 85%;}
+	@include grid-media($mq-l) {max-width: 85%;}
+	@include grid-media($mq-xl){max-width: 81.563em;
 	}
-
-	@include grid-media($mq-l){
-		@include grid-visual(red, $mq-l);
-		max-width: 1270px;
-	}
-
 }
+
+/* Visual Grid 
+
+.container{
+	@include grid-visual;
+	@include grid-media($mq-s) { @include grid-visual(green, $mq-s);}
+	@include grid-media($mq-m) { @include grid-visual(pink,  $mq-m);}
+	@include grid-media($mq-l) { @include grid-visual(red,   $mq-l);}
+	@include grid-media($mq-xl){ @include grid-visual(blue, $mq-xl);}
+}
+
+*/

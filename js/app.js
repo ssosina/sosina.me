@@ -6,11 +6,11 @@ var currentDate = new Date();
 var currentHour = currentDate.getHours();
 
 if(currentHour < 12){
-  greetingText = "Good morning sunshine,"
+  greetingText = "Good morning,"
 }else if(currentHour < 18){
- greetingText = "Good afternoon friend!"
+ greetingText = "Good afternoon,"
 }else{
-	greetingText = "Good evening sleepyhead,"
+	greetingText = "Good evening,"
 }
 
 jQuery("#greeting").text(greetingText);

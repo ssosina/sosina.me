@@ -1,21 +1,11 @@
 .hero{
-	width: 100%;
-	height: 55vh;
+	height: 35vh;
 	text-align: left;
-    display: flex;
-    align-items: flex-start;
-    @include grid-visual;
+	@include grid-container;
 }
 
-.container{
-    align-self: center;
-}
-
-.hero__summary{
-	font-family: $heading-ff;
-	font-weight: $bold;
-	font-size: $heading4-fs;
-	line-height: 1.3;
-	color: #222222;
-	margin-bottom: 20px;
+@include grid-media($mq-xl){
+	.hero__summary{
+		@include grid-column(7 of 12);
+	}
 }
