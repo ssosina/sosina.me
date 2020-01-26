@@ -63,6 +63,9 @@ a {
 /* Fonts */
 /* Font-weights */
 /* Colors */
+.bold {
+  font-weight: 700; }
+
 h1,
 h2,
 h3,
@@ -154,6 +157,8 @@ footer p {
   margin: 0px 0px 0px 28px;
   color: #ffffff;
   font-size: 12px; }
+  footer p a {
+    text-decoration: none; }
 
 /*---- Small Desktop Devices --- */
 @media screen and (min-width: 800px) {
