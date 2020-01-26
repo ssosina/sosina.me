@@ -1,0 +1,88 @@
+/* mobile */
+
+body {
+	background: $main-color;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizelegibility;
+}
+
+main {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 100px auto 100px;
+	align-items: center;
+}
+
+.message {
+	color: #ffffff;
+	margin: 0px 0px 0px 28px;
+	font-family: $paragraph-ff;
+}
+
+.block--right {
+	display: none;
+}
+
+.container {
+	max-width: 1236px;
+	width: 68%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+
+	.intro__title {
+		font-size: 25px;
+		line-height: 30px;
+		color: $font-color;
+		font-weight: $bold;
+		font-style: normal;
+	}
+
+	p {
+		margin-top: 18px;
+		line-height: 24px;
+		font-weight: $regular;
+		color: #ffffff;
+	}
+
+	.intro__social {
+		display: flex;
+		margin-top: 18px;
+
+		a {
+			text-decoration: none;
+			font-weight: $bold;
+			font-family: $paragraph-ff;
+		}
+
+		.intro__linkedin a {
+			color: #0077b5;
+		}
+		.intro__github a {
+			color: #6cc644;
+
+			&::before,
+			&::after {
+				content: '-';
+				color: #ffffff;
+				width: 100%;
+				margin: 0px 5px;
+			}
+		}
+
+		.intro__email a {
+			color: #ea4c89;
+		}
+	}
+}
+
+footer p {
+	margin: 0px 0px 0px 28px;
+	color: #ffffff;
+	font-size: 12px;
+}

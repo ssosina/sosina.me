@@ -1,31 +1,29 @@
 {
-  "name": "browser-sync-jekyll",
-  "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site using plain old HTML,SCSS and JS",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shane Osbourne",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^1.3.7",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "1.0.0",
-    "gulp-sass": "^2.1.0"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    "url": "git+https://github.com/ssosina/portfolio.git"
   },
   "keywords": [
-    "jekyll",
-    "gulp",
-    "sass",
-    "browsersync"
+    "portfolio"
   ],
+  "author": "Samuel Sosina",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
+    "url": "https://github.com/ssosina/portfolio/issues"
   },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  "homepage": "https://github.com/ssosina/portfolio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "reset-css": "^5.0.1"
+  }
 }
