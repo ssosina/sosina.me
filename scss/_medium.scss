@@ -1,0 +1,19 @@
+/*---- Small Desktop Devices --- */
+@media screen and (min-width: 800px) {
+	main {
+		grid-template-rows: 1fr auto 1fr;
+	}
+
+	.container {
+		flex-direction: row;
+		height: calc(100vh - 85px);
+		justify-content: center;
+		align-items: center;
+
+		.block--left {
+			margin-top: 0px;
+			max-width: 610px;
+			width: 100%;
+		}
+	}
+}
