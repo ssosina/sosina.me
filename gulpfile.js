@@ -1,6 +1,7 @@
 /* Gulp is simply a build took */
 
-const gulp = require('gulp');
+// const gulp = require('gulp');
+const { series, src, dest, watch } = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
@@ -8,29 +9,29 @@ const browserSync = require('browser-sync').create();
 function style() {
 	// 1. Find SCSS file
 	return (
-		gulp
-			.src('./scss/**/*.scss')
+		src('./scss/**/*.scss')
 			// 2. Pass through sass compiler
 			.pipe(sass())
 			.on('error', sass.logError)
 			// 3. Where do save compiled css
-			.pipe(gulp.dest('./css'))
+			.pipe(dest('./css'))
 			// 4. Stream changes to all browsers
 			.pipe(browserSync.stream())
 	);
 }
 
 // Watch for changes and make updates
-function watch() {
+function watchFiles() {
 	browserSync.init({
 		server: {
 			baseDir: './'
 		}
 	});
-	gulp.watch('./scss/**/*.scss', style);
-	gulp.watch('./*.html').on('change', browserSync.reload);
-	gulp.watch('./scripts/**/*.js').on('change', browserSync.reload);
+	watch('./scss/**/*.scss', style);
+	watch('./*.html').on('change', browserSync.reload);
+	watch('./scripts/**/*.js').on('change', browserSync.reload);
 }
 
 exports.style = style;
-exports.watch = watch;
+exports.watchFiles = watchFiles;
+exports.default = series(style, watchFiles);

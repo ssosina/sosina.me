@@ -114,7 +114,7 @@ main {
   display: none; }
 
 .container {
-  max-width: 1236px;
+  max-width: 1080px;
   width: 68%;
   margin: 0 auto;
   display: flex;
@@ -171,15 +171,15 @@ footer p {
     align-items: center; }
     .container .block--left {
       margin-top: 0px;
-      max-width: 610px;
-      width: 100%; } }
+      max-width: 490px; } }
 
 /*---- Large Desktop --- */
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1500px) {
   .container {
     justify-content: space-between; }
     .container .block--right {
-      display: block; }
+      display: block;
+      max-width: 500px; }
   .intro {
     height: max-content; }
     .intro .intro__title {

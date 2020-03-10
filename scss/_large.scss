@@ -1,10 +1,11 @@
 /*---- Large Desktop --- */
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1500px) {
 	.container {
 		justify-content: space-between;
 
 		.block--right {
 			display: block;
+			max-width: 500px;
 		}
 	}
 	.intro {
