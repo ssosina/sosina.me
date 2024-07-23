@@ -1,29 +1,29 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Portfolio site using plain old HTML,SCSS and JS",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ssosina/portfolio.git"
-  },
-  "keywords": [
-    "portfolio"
-  ],
-  "author": "Samuel Sosina",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ssosina/portfolio/issues"
-  },
-  "homepage": "https://github.com/ssosina/portfolio#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "browser-sync": "^2.26.13",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "reset-css": "^5.0.1"
-  }
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Portfolio site using plain old HTML,SCSS and JS",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ssosina/portfolio.git"
+	},
+	"keywords": [
+		"portfolio"
+	],
+	"author": "Samuel Sosina",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ssosina/portfolio/issues"
+	},
+	"homepage": "https://github.com/ssosina/portfolio#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"browser-sync": "^2.26.13",
+		"gulp": "^4.0.2",
+		"gulp-sass": "^4.0.2",
+		"reset-css": "^5.0.1"
+	}
 }
