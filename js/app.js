@@ -12,3 +12,7 @@ if (currentHour < 12) {
 } else {
 	greetingText.textContent = '👋 Good evening';
 }
+
+const currentYear = new Date().getFullYear();
+const yearSpan = document.querySelector('.currentYear');
+yearSpan.textContent = currentYear;
