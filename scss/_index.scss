@@ -66,8 +66,7 @@ main {
 		.intro__github a {
 			color: #6cc644;
 
-			&::before,
-			&::after {
+			&::before {
 				content: '-';
 				color: #ffffff;
 				width: 100%;

@@ -2,9 +2,11 @@
 	"name": "portfolio",
 	"version": "1.0.0",
 	"description": "Portfolio site using plain old HTML,SCSS and JS",
-	"main": "gulpfile.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "vite build && cp -r dist/* . && cp dist/.gitignore .gitignore 2>/dev/null || true"
 	},
 	"repository": {
 		"type": "git",
@@ -21,9 +23,8 @@
 	"homepage": "https://github.com/ssosina/portfolio#readme",
 	"dependencies": {},
 	"devDependencies": {
-		"browser-sync": "^2.26.13",
-		"gulp": "^4.0.2",
-		"gulp-sass": "^4.0.2",
-		"reset-css": "^5.0.1"
+		"reset-css": "^5.0.1",
+		"sass": "^1.77.0",
+		"vite": "^5.2.0"
 	}
 }
